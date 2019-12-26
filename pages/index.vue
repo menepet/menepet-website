@@ -19,13 +19,13 @@ export default {
   },
   head() {
     return {
-      title: 'Index Oeo'
+      title: 'Petousis Menelaos | Front-End Engineer'
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .app-content {
   position: absolute;
   left: $sidebarWidth;
@@ -38,8 +38,6 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
