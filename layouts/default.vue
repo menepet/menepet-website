@@ -1,7 +1,7 @@
 <template>
   <div>
     <sidebar />
-    <nuxt />
+    <nuxt class="app-content" />
   </div>
 </template>
 
@@ -25,5 +25,27 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+</style>
+
+<style lang="scss" scoped>
+.app-content {
+  position: absolute;
+  left: $sidebarWidth;
+  min-height: 100vh;
+  display: block;
+  text-align: center;
+  width: -webkit-calc(100% - #{$sidebarWidth});
+  width:    -moz-calc(100% - #{$sidebarWidth});
+  width:         calc(100% - #{$sidebarWidth});
+}
+
+@media screen and (max-width: 767px) {
+  .app-content {
+    left: 0;
+    width: 100%;
+    display: block;
+    margin-top: $header-mobile-height;
+  }
 }
 </style>

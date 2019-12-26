@@ -1,5 +1,5 @@
 <template>
-  <div class="app-content">
+  <div>
     <logo />
     <type-label />
   </div>
@@ -21,25 +21,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.app-content {
-  position: absolute;
-  left: $sidebarWidth;
-  min-height: 100vh;
-  display: block;
-  text-align: center;
-  width: -webkit-calc(100% - #{$sidebarWidth});
-  width:    -moz-calc(100% - #{$sidebarWidth});
-  width:         calc(100% - #{$sidebarWidth});
-}
-
-@media screen and (max-width: 767px) {
-  .app-content {
-    left: 0;
-    width: 100%;
-    display: block;
-    margin-top: $header-mobile-height;
-  }
-}
-</style>

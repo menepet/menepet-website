@@ -20,44 +20,44 @@
             <nav class="nav-menu">
               <ul>
                 <li>
-                  <a href="#home" class="pt-link active">
+                  <n-link to="/" class="pt-link active">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-home" />
                     </span>
                     Home
-                  </a>
+                  </n-link>
                 </li>
                 <li>
-                  <a href="#about" class="pt-link">
+                  <n-link to="/about" class="pt-link">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-user" />
                     </span>
                     About Me
-                  </a>
+                  </n-link>
                 </li>
                 <li>
-                  <a href="#resume" class="pt-link">
+                  <n-link to="/resume" class="pt-link">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-license" />
                     </span>
                     Resume
-                  </a>
+                  </n-link>
                 </li>
                 <li>
-                  <a href="#portfolio" class="pt-link">
+                  <n-link to="/portfolio" class="pt-link">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-briefcase" />
                     </span>
                     Portfolio
-                  </a>
+                  </n-link>
                 </li>
                 <li>
-                  <a href="#contact" class="pt-link">
+                  <n-link to="/contact" class="pt-link">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-envelope" />
                     </span>
                     Contact
-                  </a>
+                  </n-link>
                 </li>
               </ul>
             </nav>
