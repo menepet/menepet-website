@@ -93,6 +93,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#header-content {
+  font-family: 'Droid Sans'
+}
 .header-main {
     position: fixed;
     top: 0;

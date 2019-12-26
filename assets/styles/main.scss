@@ -1,4 +1,22 @@
 $sidebarWidth: 200px;
 $header-mobile-height: 50px;
 
-$main-color: #00A3E1;
+$main-color: #668fab;
+$bg-color: #f4f4f4;
+$font-color: #414142;
+
+@font-face {
+    font-family: "Droid Sans";
+    src: url('~assets/fonts/droid-sans/DroidSans.eot'); /* IE9 Compat Modes */
+    src: url("~assets/fonts/droid-sans/DroidSans.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("~assets/fonts/droid-sans/DroidSans.woff") format("woff"), /* Pretty Modern Browsers */
+        url("~assets/fonts/droid-sans/DroidSans.woff2") format("woff2"); /* Super Modern Browsers */
+}
+
+@font-face {
+    font-family: "Droid Sans Bold";
+    src: url('~assets/fonts/droid-sans/DroidSans-Bold.eot'); /* IE9 Compat Modes */
+    src: url("~assets/fonts/droid-sans/DroidSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("~assets/fonts/droid-sans/DroidSans-Bold.woff") format("woff"), /* Pretty Modern Browsers */
+        url("~assets/fonts/droid-sans/DroidSans-Bold.woff2") format("woff2"); /* Super Modern Browsers */
+}
