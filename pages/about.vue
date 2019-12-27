@@ -58,6 +58,11 @@ export default {
       date.setFullYear(date.getFullYear() - 1992)
       return date.getFullYear()
     }
+  },
+  head() {
+    return {
+      title: 'About | Petousis Menelaos'
+    }
   }
 }
 </script>

@@ -59,6 +59,23 @@ export default {
       'assets/styles/main.scss'
     ]
   },
+  pwa: {
+    manifest: {
+      name: 'Menelaos Petousis Web',
+      short_name: 'menepet web',
+      background_color: '#f4f4f4',
+      theme_color: '#f4f4f4',
+      description: 'My Personal Resume Website"',
+      lang: 'en-US',
+      categories: ['cv', 'resume', 'portfolio', 'web', 'developer', 'development', 'menepet']
+    },
+    meta: {
+      name: 'Petousis Menelaos',
+      author: 'Petousis Menelaos',
+      description: 'My Personal Resume Website"',
+      theme_color: '#f4f4f4'
+    }
+  },
   /*
   ** Build configuration
   */

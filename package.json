@@ -4,6 +4,14 @@
   "description": "My Personal Resume Website",
   "author": "Petousis Menelaos",
   "private": true,
+  "keywords": [
+    "menepet",
+    "resume",
+    "cv",
+    "developer",
+    "web",
+    "site"
+  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

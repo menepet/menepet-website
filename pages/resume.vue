@@ -174,6 +174,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'My Resume | Petousis Menelaos'
+    }
   }
 }
 </script>

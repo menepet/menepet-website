@@ -13,6 +13,11 @@ export default {
   name: 'Contact',
   components: {
     PageHeader
+  },
+  head() {
+    return {
+      title: 'Contact | Petousis Menelaos'
+    }
   }
 }
 </script>
