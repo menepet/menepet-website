@@ -1,7 +1,7 @@
 <template>
   <div class="text-left">
     <pre id="typewriter">
-<span class="var-highlight">const</span> MenePet = {
+<span class="var-highlight">const</span> menePet = {
     name: <span class="string-highlight">'Petousis Menelaos'</span>,
     type: <span class="string-highlight">'Front End Dev / Freelancer'</span>,
     location: <span class="string-highlight">'Athens, Greece'</span>,

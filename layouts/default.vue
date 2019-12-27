@@ -14,10 +14,10 @@ export default {
 </script>
 
 <style lang="scss">
-html {
-  font-family: -apple-system, BlinkMacSystemFont,
-    Arial, sans-serif;
+html, body {
+  font-family: Arial, sans-serif, -apple-system, BlinkMacSystemFont;
   background-color: $bg-color;
+  color: $font-color;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

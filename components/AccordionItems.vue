@@ -8,23 +8,27 @@
       aria-controls="collapse-item"
       @click="visible = !visible"
     >
-      Check Projects
+      Take a look!
     </b-button>
 
     <b-collapse id="collapse-item" v-model="visible" class="mt-2">
-      <b-card>I am collapsible content!</b-card>
+      <project-projection :projects="projects" @toggleView="visible = false" />
     </b-collapse>
   </div>
 </template>
 
 <script>
+import ProjectProjection from '~/components/ProjectProjection'
+
 export default {
   name: 'AccordionItems',
+  components: {
+    ProjectProjection
+  },
   props: {
-    index: {
-      type: Number,
-      required: true,
-      default: 0
+    projects: {
+      type: Array,
+      required: true
     }
   },
   data() {

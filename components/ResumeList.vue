@@ -18,7 +18,10 @@
           <span class="from">{{ item.from }}</span>
         </span>
 
-        <accordion-items :index="index" />
+        <accordion-items
+          v-if="item.projects && item.projects.length > 0"
+          :projects="item.projects"
+        />
 
       </li>
 

@@ -125,30 +125,26 @@ $bg: #2a2b30;
         background-color: $main-color;
         margin: 0;
     }
-    nav.nav-menu ul {
-        margin: 0;
-        padding: 0;
-        & li {
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 1px solid #202226;
-            text-align: left;
-            a {
-                display: block;
-                line-height: 60px;
-                padding-left: 40px;
-                position: relative;
-                color: #777;
-                &.active {
-                    color: #fff;
-                }
-                span.nav-menu-icon {
-                    display: inline-block;
-                    font-size: 20px;
-                    margin-right: 10px;
-                    vertical-align: top;
-                }
+    nav.nav-menu ul li {
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #202226;
+        text-align: left;
+        a {
+            display: block;
+            line-height: 60px;
+            padding-left: 40px;
+            position: relative;
+            color: #777;
+            &.active {
+                color: #fff;
+            }
+            span.nav-menu-icon {
+                display: inline-block;
+                font-size: 20px;
+                margin-right: 10px;
+                vertical-align: top;
             }
         }
     }

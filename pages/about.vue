@@ -27,13 +27,13 @@
             Personal Information
           </h3>
           <ul>
-            <li><span class="title">Name</span><span class="value">Petousis Menelaos</span></li>
-            <li><span class="title">Age</span><span class="value">{{ currentAge }} Years</span></li>
-            <li><span class="title">Residence</span><span class="value">Athens, Greece</span></li>
-            <li><span class="title">Address</span><span class="value">Vrilissia</span></li>
-            <li><span class="title">Email</span><span class="value">menepet@gmail.com</span></li>
-            <li><span class="title">Phone</span><span class="value">(+30) 693 222 57 60</span></li>
-            <li><span class="title">Freelance</span><span class="value">Available</span></li>
+            <li><span class="title-underline">Name</span><span class="value">Petousis Menelaos</span></li>
+            <li><span class="title-underline">Age</span><span class="value">{{ currentAge }} Years Old</span></li>
+            <li><span class="title-underline">Residence</span><span class="value">Athens, Greece</span></li>
+            <li><span class="title-underline">Address</span><span class="value">Vrilissia</span></li>
+            <li><span class="title-underline">Email</span><span class="value">menepet@gmail.com</span></li>
+            <li><span class="title-underline">Phone</span><span class="value">(+30) 693 222 57 60</span></li>
+            <li><span class="title-underline">Freelance</span><span class="value">Available</span></li>
           </ul>
           <b-button pill variant="outline-info" class="mt-3">
             Download Resume
@@ -63,30 +63,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
-  padding: 0;
-}
 ul li {
     font-family: "Droid Sans";
     line-height: 1em;
     margin-bottom: 13px;
-    list-style: none !important;
-    .title {
-        font-family: "Droid Sans Bold";
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: .5px;
-        border-bottom: 2px solid $main-color;
-        position: relative;
-        display: inline-block;
-        margin-right: 15px;
-        padding-bottom: 2px;
-        color: $font-color;
-        &:after {
-            content: ':';
-            position: absolute;
-            right: -10px;
-        }
-    }
 }
 </style>
