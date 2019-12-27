@@ -1,6 +1,6 @@
 <template>
   <div>
-    <logo />
+    <logo style="margin: 50px 0" />
     <type-label />
   </div>
 </template>

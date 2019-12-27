@@ -1,14 +1,15 @@
 <template>
   <div class="text-left">
     <pre id="typewriter">
-<span class="var-highlight">var</span> object = {
+<span class="var-highlight">const</span> MenePet = {
     name: <span class="string-highlight">'Petousis Menelaos'</span>,
     type: <span class="string-highlight">'Front End Dev / Freelancer'</span>,
     location: <span class="string-highlight">'Athens, Greece'</span>,
     properties:[<span class="string-highlight">'Javascript'</span>,
                 <span class="string-highlight">'HTML5'</span>,
                 <span class="string-highlight">'SCSS'</span>];
-    };<br>
+    };
+<span class="comment">// After initialization, click </span><n-link to="/about">here</n-link>
 </pre>
   </div>
 </template>
@@ -96,12 +97,23 @@ export default {
     color: $main-color;
 }
 
+.comment {
+    color: #67994a;
+    font-style: italic;
+}
+
+a {
+    color: #67994a;
+    border-bottom: #67994a 1px dotted;
+    &:hover {
+      text-decoration: none;
+    }
+}
+
 #typewriter {
     font-size: 2em;
-    margin: 0;
-    padding-left: 7%;
-    // display: table;
-    // margin: 0 auto;
+    margin: 0 auto;
+    width: 780px;
 
     &:after{
         content: "|";
@@ -126,7 +138,7 @@ export default {
 
 @media screen and (max-width: 767px) {
     #typewriter {
-        font-size: 1em;
+        font-size: 1.1em;
         padding-left: 2%;
     }
 }

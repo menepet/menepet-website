@@ -1,7 +1,7 @@
 <template>
   <div>
     <sidebar />
-    <nuxt class="app-content" />
+    <nuxt class="app-content" keep-alive />
   </div>
 </template>
 

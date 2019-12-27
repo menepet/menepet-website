@@ -20,7 +20,7 @@
             <nav class="nav-menu">
               <ul>
                 <li>
-                  <n-link to="/" class="pt-link active">
+                  <n-link to="/" class="active">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-home" />
                     </span>
@@ -28,7 +28,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link to="/about" class="pt-link">
+                  <n-link to="/about">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-user" />
                     </span>
@@ -36,7 +36,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link to="/resume" class="pt-link">
+                  <n-link to="/resume">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-license" />
                     </span>
@@ -44,7 +44,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link to="/portfolio" class="pt-link">
+                  <n-link to="/portfolio">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-briefcase" />
                     </span>
@@ -52,7 +52,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link to="/contact" class="pt-link">
+                  <n-link to="/contact">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-envelope" />
                     </span>
@@ -93,6 +93,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$bg: #2a2b30;
+
 #header-content {
   font-family: 'Droid Sans'
 }
@@ -102,7 +104,7 @@ export default {
     left: 0;
     height: 100%;
     width: $sidebarWidth;
-    background-color: #17181B;
+    background-color: $bg;
     overflow: auto;
     overflow-x: hidden;
     text-align: center;
@@ -180,7 +182,7 @@ header .header-mobile {
     left: 0;
     height: $header-mobile-height;
     width: 100%;
-    background-color: #17181B;
+    background-color: $bg;
     z-index: 1;
     display: none;
     -webkit-transition: all .3s ease-in-out;
