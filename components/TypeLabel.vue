@@ -148,7 +148,8 @@ a {
 @media screen and (max-width: 767px) {
     #typewriter {
         font-size: 1.1em;
-        width: 450px;
+        width: 360px;
+        width: 100vw;
         height: 250px;
     }
 }

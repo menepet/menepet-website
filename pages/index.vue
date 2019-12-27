@@ -16,7 +16,7 @@ export default {
   },
   head() {
     return {
-      title: 'Petousis Menelaos | Front-End Engineer'
+      title: 'Petousis Menelaos | Front-End Developer'
     }
   }
 }

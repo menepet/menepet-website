@@ -14,13 +14,13 @@
           <div class="simplebar-content">
             <div class="position-relative">
               <h2 class="header-name">Petousis Menelaos</h2>
-              <img src="https://watson-vcard.netlify.com/img/profile-img.jpg" class="w-100" alt="profile-pic">
+              <img src="~/assets/images/menepet-logo.jpg" class="w-100" alt="profile-pic">
             </div>
             <!--Nav Menus-->
             <nav class="nav-menu">
               <ul>
                 <li>
-                  <n-link to="/" class="active">
+                  <n-link active-class="active" to="/" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-home" />
                     </span>
@@ -28,7 +28,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link to="/about">
+                  <n-link active-class="active" to="/about" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-user" />
                     </span>
@@ -36,7 +36,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link to="/resume">
+                  <n-link active-class="active" to="/resume" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-license" />
                     </span>
@@ -44,7 +44,7 @@
                   </n-link>
                 </li>
                 <!-- <li>
-                  <n-link to="/portfolio">
+                  <n-link active-class="active" to="/portfolio" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-briefcase" />
                     </span>
@@ -52,7 +52,7 @@
                   </n-link>
                 </li> -->
                 <li>
-                  <n-link to="/contact">
+                  <n-link active-class="active" to="/contact" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-envelope" />
                     </span>
