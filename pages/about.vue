@@ -89,13 +89,4 @@ ul li {
         }
     }
 }
-.btn-outline-info {
-    color: $main-color;
-    border-color: $main-color;
-    &:hover {
-      color: #fff;
-      background-color: $main-color;
-      border-color: $main-color;
-    }
-}
 </style>

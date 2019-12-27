@@ -1,11 +1,18 @@
 <template>
   <div>
-    Contact
+    <b-container>
+      <page-header :param="{ title: 'Contact', icon: 'lnr-envelope' }" />
+    </b-container>
   </div>
 </template>
 
 <script>
+import PageHeader from '~/components/PageHeader'
+
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  components: {
+    PageHeader
+  }
 }
 </script>

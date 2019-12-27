@@ -43,14 +43,14 @@
                     Resume
                   </n-link>
                 </li>
-                <li>
+                <!-- <li>
                   <n-link to="/portfolio">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-briefcase" />
                     </span>
                     Portfolio
                   </n-link>
-                </li>
+                </li> -->
                 <li>
                   <n-link to="/contact">
                     <span class="nav-menu-icon">

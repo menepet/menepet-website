@@ -1,6 +1,6 @@
 <template>
   <section class="text-center">
-    <h2>EDUCATION</h2>
+    <h2>{{ title }}</h2>
     <ul class="experience">
 
       <li v-for="(item, index) in list" :key="index">
@@ -17,6 +17,9 @@
           <span class="to">{{ item.to }}</span>
           <span class="from">{{ item.from }}</span>
         </span>
+
+        <accordion-items :index="index" />
+
       </li>
 
     </ul>
@@ -24,7 +27,13 @@
 </template>
 
 <script>
+import AccordionItems from '~/components/AccordionItems'
+
 export default {
+  name: 'ResumeList',
+  components: {
+    AccordionItems
+  },
   props: {
     list: {
       type: Array,
