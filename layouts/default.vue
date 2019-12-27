@@ -34,7 +34,6 @@ html {
   left: $sidebarWidth;
   min-height: 100vh;
   display: block;
-  text-align: center;
   width: -webkit-calc(100% - #{$sidebarWidth});
   width:    -moz-calc(100% - #{$sidebarWidth});
   width:         calc(100% - #{$sidebarWidth});
