@@ -3,11 +3,11 @@
     <pre id="typewriter">
 <span class="var-highlight">const</span> menePet = {
     name: <span class="string-highlight">'Petousis Menelaos'</span>,
-    type: <span class="string-highlight">'Front End Dev / Freelancer'</span>,
+    type: <span class="string-highlight">'Front End Dev/Freelancer'</span>,
     location: <span class="string-highlight">'Athens, Greece'</span>,
-    properties:[<span class="string-highlight">'Javascript'</span>,
-                <span class="string-highlight">'HTML5'</span>,
-                <span class="string-highlight">'SCSS'</span>];
+    prop: [<span class="string-highlight">'Javascript frameworks'</span>,
+           <span class="string-highlight">'HTML5'</span>,
+           <span class="string-highlight">'SCSS'</span>];
     };
 <span class="comment">// After initialization, click </span><n-link to="/about">here</n-link>
 </pre>
@@ -111,9 +111,10 @@ a {
 }
 
 #typewriter {
-    font-size: 2em;
+    font-size: 1.9em;
     margin: 0 auto;
-    width: 780px;
+    width: 770px;
+    height: 450px;
 
     &:after{
         content: "|";
@@ -136,10 +137,19 @@ a {
     100%{opacity: 1;}
 }
 
+@media screen and (max-width: 1000px) {
+    #typewriter {
+        font-size: 1.4em;
+        width: 550px;
+        height: 350px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     #typewriter {
         font-size: 1.1em;
-        padding-left: 2%;
+        width: 450px;
+        height: 250px;
     }
 }
 </style>
