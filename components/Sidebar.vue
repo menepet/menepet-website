@@ -4,7 +4,14 @@
       <!--Mobile Header-->
       <div class="header-mobile">
         <a class="header-toggle" @click="toggleMenu">
-          <i class="lnr lnr-menu" />
+          <div id="nav-icon">
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
         </a>
         <h2>Petousis Menelaos</h2>
       </div>
@@ -78,9 +85,15 @@ export default {
   name: 'Sidebar',
   methods: {
     toggleMenu() {
-      const el = document.getElementById('header-content')
-      const className = 'on'
+      const navEl = document.getElementById('header-content')
+      const navElClassName = 'on'
+      const burgerEl = document.getElementById('nav-icon')
+      const burgerElClassName = 'open'
 
+      this.toggleClass(navEl, navElClassName)
+      this.toggleClass(burgerEl, burgerElClassName)
+    },
+    toggleClass(el, className) {
       if (!el || !el.classList) { return }
       if (el.classList.contains(className)) {
         el.classList.remove(className)
@@ -93,6 +106,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/nav-icon.scss';
 $bg: #2a2b30;
 
 #header-content {
@@ -154,7 +168,7 @@ $bg: #2a2b30;
         left: 0;
         width: 100%;
 
-        .copy {
+        &> .copy {
           font-size: 12px;
           color: #777;
         }
@@ -186,14 +200,11 @@ header .header-mobile {
     transition: all .3s ease-in-out;
 
     .header-toggle {
-        font-size: 20px;
-        line-height: 50px;
         cursor: pointer;
         width: 50px;
-        text-align: center;
+        height: 100%;
         border-left: 1px solid #3b3c43;
         float: right;
-        i { color: #fff; }
     }
     h2 {
         position: absolute;
