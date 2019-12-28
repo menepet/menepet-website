@@ -3,7 +3,13 @@
     <b-container>
       <page-header :param="{ title: 'Contact', icon: 'lnr-envelope' }" />
 
-      <b-form id="contact-form" method="post" action="contact.php" role="form">
+      <b-form
+        id="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+      >
         <div class="messages" />
         <div class="controls">
           <b-row>

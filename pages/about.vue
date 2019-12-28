@@ -164,7 +164,7 @@ section {
   .meter {
       height: 5px;
       position: relative;
-      background: #f3efe6;
+      background: #668fab0f;
       overflow: hidden;
       span {
           display: block;
