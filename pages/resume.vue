@@ -219,7 +219,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .icon i.lnr {
+  .icon i.lnr, .icon a {
     color: $main-color;
     font-size: 22px;
     cursor: pointer;

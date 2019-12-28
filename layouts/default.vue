@@ -30,6 +30,7 @@ html, body {
 
 <style lang="scss" scoped>
 .app-content {
+  font-family: "Droid Sans";
   position: absolute;
   left: $sidebarWidth;
   min-height: 100vh;
