@@ -1,15 +1,19 @@
 <template>
   <div>
-    <b-container class="text-center">
+    <b-container>
       <page-header :param="{ title: 'My Resume', icon: 'lnr-license' }" />
+      <span class="icon"><i class="lnr lnr-printer" @click="print" /></span>
+      <span class="icon"><i class="lnr lnr-download" /></span>
 
       <resume-list title="EXPERIENCE" :list="experience" />
 
       <resume-list class="mt-4" title="EDUCATION" :list="education" />
 
-      <b-button pill variant="outline-info" to="/contact" class="my-4">
-        Contact me if you want :)
-      </b-button>
+      <div class="w-100 text-center">
+        <b-button pill variant="outline-info" to="/contact" class="my-4">
+          Send me a message in a bottle
+        </b-button>
+      </div>
     </b-container>
   </div>
 </template>
@@ -17,6 +21,7 @@
 <script>
 import PageHeader from '~/components/PageHeader'
 import ResumeList from '~/components/ResumeList'
+import { EventBus } from '~/plugins/event-bus.js'
 
 export default {
   name: 'AboutPage',
@@ -29,7 +34,8 @@ export default {
       experience: [
         {
           title: 'Front End Developer',
-          location: 'Wind Hellas',
+          location: 'YouP..n',
+          // location: 'Wind Hellas',
           descr: `SDolor id atque accusantium ut impedit odit provident
           soluta voluptatem Veritatis ipsam neque mollitia vero suscipit a laborum doloremque. Ipsa!`,
           from: 'Jan. 2020',
@@ -186,6 +192,22 @@ export default {
       ]
     }
   },
+  mounted() {
+    window.onafterprint = function() {
+      EventBus.$emit('collapseAll')
+    }
+  },
+  beforeDestroy() {
+    EventBus.$off()
+  },
+  methods: {
+    print() {
+      EventBus.$emit('expandAll')
+      setTimeout(() => {
+        window.print()
+      }, 100)
+    }
+  },
   head() {
     return {
       title: 'My Resume | Petousis Menelaos'
@@ -193,3 +215,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .icon i.lnr {
+    color: $main-color;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+</style>

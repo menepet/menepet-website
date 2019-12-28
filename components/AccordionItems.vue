@@ -19,6 +19,7 @@
 
 <script>
 import ProjectProjection from '~/components/ProjectProjection'
+import { EventBus } from '~/plugins/event-bus.js'
 
 export default {
   name: 'AccordionItems',
@@ -35,6 +36,17 @@ export default {
     return {
       visible: false
     }
+  },
+  mounted() {
+    EventBus.$on('expandAll', () => {
+      this.visible = true
+    })
+    EventBus.$on('collapseAll', () => {
+      this.visible = false
+    })
+  },
+  beforeDestroy() {
+    EventBus.$off()
   }
 }
 </script>

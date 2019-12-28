@@ -2,13 +2,13 @@
   <div class="text-left">
     <pre id="typewriter">
 <span class="var-highlight">const</span> menePet = {
-    name: <span class="string-highlight">'Petousis Menelaos'</span>,
-    type: <span class="string-highlight">'Front End Dev/Freelancer'</span>,
-    location: <span class="string-highlight">'Athens, Greece'</span>,
-    prop: [<span class="string-highlight">'Javascript frameworks'</span>,
-           <span class="string-highlight">'HTML5'</span>,
-           <span class="string-highlight">'SCSS'</span>];
-    };
+      name: <span class="string-highlight">'Petousis Menelaos'</span>,
+      type: <span class="string-highlight">'Front End Dev/Freelancer'</span>,
+      location: <span class="string-highlight">'Athens, Greece'</span>,
+      prop: [<span class="string-highlight">'Javascript frameworks'</span>,
+             <span class="string-highlight">'HTML5'</span>,
+             <span class="string-highlight">'SCSS'</span>];
+};
 <span class="comment">// After initialization, click </span><n-link to="/about">here</n-link>
 </pre>
   </div>
