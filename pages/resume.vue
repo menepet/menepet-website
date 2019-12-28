@@ -1,12 +1,15 @@
 <template>
   <div>
-    <b-container>
+    <b-container class="text-center">
       <page-header :param="{ title: 'My Resume', icon: 'lnr-license' }" />
 
       <resume-list title="EXPERIENCE" :list="experience" />
 
       <resume-list class="mt-4" title="EDUCATION" :list="education" />
 
+      <b-button pill variant="outline-info" to="/contact" class="my-4">
+        Contact me if you want :)
+      </b-button>
     </b-container>
   </div>
 </template>
@@ -171,6 +174,14 @@ export default {
           perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima`,
           from: '2010',
           to: '2016'
+        },
+        {
+          title: 'School student',
+          location: 'Platon School',
+          descr: `Sit cupiditate praesentium ex esse nulla Facere fuga 
+          perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima`,
+          from: '',
+          to: '2010'
         }
       ]
     }
