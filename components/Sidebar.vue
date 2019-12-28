@@ -27,7 +27,7 @@
             <nav class="nav-menu">
               <ul>
                 <li>
-                  <n-link active-class="active" to="/" @click.native="toggleMenu">
+                  <n-link exact-active-class="active" to="/" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-home" />
                     </span>
@@ -35,7 +35,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link active-class="active" to="/about" @click.native="toggleMenu">
+                  <n-link exact-active-class="active" to="/about" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-user" />
                     </span>
@@ -43,7 +43,7 @@
                   </n-link>
                 </li>
                 <li>
-                  <n-link active-class="active" to="/resume" @click.native="toggleMenu">
+                  <n-link exact-active-class="active" to="/resume" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-license" />
                     </span>
@@ -51,7 +51,7 @@
                   </n-link>
                 </li>
                 <!-- <li>
-                  <n-link active-class="active" to="/portfolio" @click.native="toggleMenu">
+                  <n-link exact-active-class="active" to="/portfolio" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-briefcase" />
                     </span>
@@ -59,7 +59,7 @@
                   </n-link>
                 </li> -->
                 <li>
-                  <n-link active-class="active" to="/contact" @click.native="toggleMenu">
+                  <n-link exact-active-class="active" to="/contact" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
                       <i class="lnr lnr-envelope" />
                     </span>
