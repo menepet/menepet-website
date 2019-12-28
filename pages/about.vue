@@ -51,6 +51,23 @@
           </b-button>
         </b-col>
       </b-row>
+      <b-row>
+        <b-col>
+          <h3>
+            Coding Skills
+          </h3>
+        </b-col>
+      </b-row>
+      <b-row class="mb-4">
+        <b-col v-for="(item, index) in skills" :key="index" lg="6">
+          <section>
+            <h4>{{ item.skill }}</h4>
+            <div class="meter">
+              <span :style="`width:${item.progress}%;`"><span class="progress" /></span>
+            </div>
+          </section>
+        </b-col>
+      </b-row>
     </b-container>
   </div>
 </template>
@@ -62,6 +79,60 @@ export default {
   name: 'AboutPage',
   components: {
     PageHeader
+  },
+  data() {
+    return {
+      skills: [
+        {
+          skill: 'VueJs / Nuxt',
+          progress: 85
+        },
+        {
+          skill: 'EmberJs',
+          progress: 80
+        },
+        {
+          skill: 'SCSS / SASS',
+          progress: 70
+        },
+        {
+          skill: 'HTML',
+          progress: 85
+        },
+        {
+          skill: 'PWA',
+          progress: 53
+        },
+        {
+          skill: 'ECMA 6',
+          progress: 80
+        },
+        {
+          skill: 'Bootstrap',
+          progress: 81
+        },
+        {
+          skill: 'MeteorJs',
+          progress: 75
+        },
+        {
+          skill: 'Git',
+          progress: 83
+        },
+        {
+          skill: 'Linux',
+          progress: 73
+        },
+        {
+          skill: 'jQuery',
+          progress: 67
+        },
+        {
+          skill: 'Webpack',
+          progress: 64
+        }
+      ]
+    }
   },
   computed: {
     currentAge() {
@@ -86,5 +157,41 @@ ul li {
     a {
       color: $main-color;
     }
+}
+
+section {
+  padding: 2%;
+  .meter {
+      height: 5px;
+      position: relative;
+      background: #f3efe6;
+      overflow: hidden;
+      span {
+          display: block;
+          height: 100%;
+      }
+      .progress {
+          background-color: $main-color;
+          -webkit-animation: progressBar 3s ease-in-out;
+          animation: progressBar 3s ease-in-out;
+          -moz-animation: progressBar 3s ease-in-out;
+          -webkit-animation-fill-mode:both;
+          -moz-animation-fill-mode:both;
+          animation-fill-mode:both;
+      }
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+@-webkit-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
 }
 </style>
