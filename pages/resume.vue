@@ -38,16 +38,16 @@ export default {
           title: 'Front End Developer',
           location: 'YouP..n',
           // location: 'Wind Hellas',
-          descr: `SDolor id atque accusantium ut impedit odit provident
-          soluta voluptatem Veritatis ipsam neque mollitia vero suscipit a laborum doloremque. Ipsa!`,
+          descr: `Front-end Developer trying new technologies such as PWA, AMP and Js Frameworks.`,
           from: 'Jan. 2020',
           to: 'now'
         },
         {
           title: 'Front End Developer',
-          location: 'MPASS Ltd.',
-          descr: `SDolor id atque accusantium ut impedit odit provident
-          soluta voluptatem Veritatis ipsam neque mollitia vero suscipit a laborum doloremque. Ipsa!`,
+          location: 'MPASS Ltd, Athens',
+          descr: `Web Developer with emphasis on the Fron-end. At first I was doing fullstack work,
+            but along the way I used different Front-end tools like VueJs/Nuxt, EmberJs, MeteorJs,
+            GoJs, BackBoneJS, Apache Cordova and more. Check my project list below for more ...`,
           from: 'Oct. 2016',
           to: 'Dec. 2019',
           projects: [
@@ -155,7 +155,7 @@ export default {
         },
         {
           title: 'Android Developer',
-          location: 'Cosmote / OTE Hellas',
+          location: 'Cosmote / OTE Hellas, Athens',
           descr: `Thesis on the subject: Indoor Navigation through Beacons Bluetooth Low
           Energy (BLE) technology. Additionally, an app has been implemented and for
           people without the sense of vision.`,
@@ -178,16 +178,17 @@ export default {
         {
           title: 'Computer Science degree',
           location: 'Athens University of Economics and Busines (AUEB)',
-          descr: `Sit cupiditate praesentium ex esse nulla Facere fuga 
-          perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima`,
+          descr: `Undergraduate student at the Athens University of Economics
+            and Business, with a lot of volunteer work in the technical field
+            and courses such as: Artificial Intelligence, Compilers, Computer Networking,
+            Digital Systems Design, Distributed Systems`,
           from: '2010',
           to: '2016'
         },
         {
           title: 'School student',
           location: 'Platon School',
-          descr: `Sit cupiditate praesentium ex esse nulla Facere fuga 
-          perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima`,
+          descr: `Student at Platon school, in Athens Greece`,
           from: '',
           to: '2010'
         }

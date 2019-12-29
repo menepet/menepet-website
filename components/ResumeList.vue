@@ -70,6 +70,7 @@ ul.experience {
         transition: all .5s ease-in-out;
 
         article {
+            padding: 0 7%;
             h4 {
                 font-family: "Droid Sans Bold";
                 font-size: 18px;
@@ -142,6 +143,11 @@ ul.experience {
                 border-color: $main-color;
             }
         }
+    }
+}
+@media screen and (max-width: 767px) {
+    ul.experience > li article {
+        padding: 0;
     }
 }
 </style>

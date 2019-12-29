@@ -3,7 +3,7 @@
     <b-container>
       <page-header :param="{ title: 'Contact', icon: 'lnr-envelope' }" />
 
-      <b-form
+      <form
         id="contact-form"
         name="contact"
         method="POST"
@@ -26,10 +26,6 @@
                 >
                 <div class="help-block with-errors" />
               </div>
-            </b-col>
-          </b-row>
-          <b-row>
-            <b-col md="6">
               <div class="form-group">
                 <h4 for="form_email">Email *</h4>
                 <input
@@ -42,6 +38,24 @@
                   data-error="Valid email is required."
                 >
                 <div class="help-block with-errors" />
+              </div>
+            </b-col>
+            <b-col md="6">
+              <div
+                class="LI-profile-badge float-right"
+                data-version="v1"
+                data-size="medium"
+                data-locale="en_US"
+                data-type="horizontal"
+                data-theme="light"
+                data-vanity="menelaospetousis"
+              >
+                <a
+                  class="LI-simple-link"
+                  href="https://gr.linkedin.com/in/menelaospetousis?trk=profile-badge"
+                >
+                  Menelaos Petousis
+                </a>
               </div>
             </b-col>
           </b-row>
@@ -83,7 +97,7 @@
             </b-col>
           </b-row>
         </div>
-      </b-form>
+      </form>
     </b-container>
   </div>
 </template>
@@ -98,7 +112,10 @@ export default {
   },
   head() {
     return {
-      title: 'Contact | Petousis Menelaos'
+      title: 'Contact | Petousis Menelaos',
+      script: [
+        { src: 'https://platform.linkedin.com/badges/js/profile.js' }
+      ]
     }
   }
 }

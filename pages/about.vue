@@ -2,8 +2,8 @@
   <div>
     <b-container>
       <page-header :param="{ title: 'About Me', icon: 'lnr-user' }" />
-      <b-row>
-        <b-col lg="8">
+      <b-row class="mb-4">
+        <b-col class="mb-4" lg="6">
           <h3>
             Front End Developer
           </h3>
@@ -19,10 +19,10 @@
             porro praesentium excepturi. Alias ab consequatur?
           </p>
           <div class="my-4 w-75">
-            <img class="img-fluid" src="https://watson-vcard.netlify.com/img/signature-black.png" alt="signature">
+            <img class="img-fluid" src="~/assets/images/mene-signature.svg" alt="signature">
           </div>
         </b-col>
-        <b-col lg="4">
+        <b-col offset-lg="2" lg="4">
           <h3>
             Personal Information
           </h3>
@@ -58,7 +58,7 @@
           </h3>
         </b-col>
       </b-row>
-      <b-row class="mb-4">
+      <b-row style="margin-bottom: 100px;">
         <b-col v-for="(item, index) in skills" :key="index" lg="6">
           <section>
             <h4>{{ item.skill }}</h4>
@@ -85,7 +85,7 @@ export default {
       skills: [
         {
           skill: 'VueJs / Nuxt',
-          progress: 85
+          progress: 87
         },
         {
           skill: 'EmberJs',
@@ -104,16 +104,24 @@ export default {
           progress: 53
         },
         {
-          skill: 'ECMA 6',
+          skill: 'ECMA',
           progress: 80
+        },
+        {
+          skill: 'State Management',
+          progress: 76
         },
         {
           skill: 'Bootstrap',
           progress: 81
         },
         {
-          skill: 'MeteorJs',
-          progress: 75
+          skill: 'Java',
+          progress: 60
+        },
+        {
+          skill: 'Webpack',
+          progress: 64
         },
         {
           skill: 'Git',
@@ -122,14 +130,6 @@ export default {
         {
           skill: 'Linux',
           progress: 73
-        },
-        {
-          skill: 'jQuery',
-          progress: 67
-        },
-        {
-          skill: 'Webpack',
-          progress: 64
         }
       ]
     }

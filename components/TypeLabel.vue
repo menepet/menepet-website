@@ -1,6 +1,6 @@
 <template>
   <div class="text-left">
-    <pre id="typewriter">
+    <pre id="typewriter" @click="goToAbout">
 <span class="var-highlight">const</span> menePet = {
       name: <span class="string-highlight">'Petousis Menelaos'</span>,
       type: <span class="string-highlight">'Front End Dev/Freelancer'</span>,
@@ -9,7 +9,7 @@
              <span class="string-highlight">'HTML5'</span>,
              <span class="string-highlight">'SCSS'</span>];
 };
-<span class="comment">// After initialization, click </span><n-link to="/about">here</n-link>
+<span class="comment">// After initialization, click </span><span class="link">here</span>
 </pre>
   </div>
 </template>
@@ -23,6 +23,9 @@ export default {
     typewriter.type()
   },
   methods: {
+    goToAbout() {
+      this.$router.push('/about')
+    },
     setupTypewriter(t) {
       const HTML = t.innerHTML
 
@@ -102,7 +105,9 @@ export default {
     font-style: italic;
 }
 
-a {
+.link {
+    @extend .comment;
+    cursor: pointer;
     color: #67994a;
     border-bottom: #67994a 1px dotted;
     &:hover {
@@ -115,7 +120,6 @@ a {
     margin: 0 auto;
     width: 770px;
     height: 450px;
-
     &:after{
         content: "|";
         animation: blink 200ms linear infinite alternate;
@@ -147,7 +151,7 @@ a {
 
 @media screen and (max-width: 767px) {
     #typewriter {
-        font-size: 1.1em;
+        font-size: 1em;
         width: 360px;
         width: 100vw;
         height: 250px;

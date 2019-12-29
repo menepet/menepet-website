@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || 'Petousis Menelaos | Front-End Developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,13 +26,18 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
+  /**
+   * Global Page Transition
+   */
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in'
+  },
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: [],
   /*
   ** Nuxt.js dev-modules
   */
@@ -61,18 +66,18 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'Menelaos Petousis Web',
-      short_name: 'menepet web',
+      name: 'Petousis Menelaos Front Dev',
+      short_name: 'menepet front end dev',
       background_color: '#f4f4f4',
       theme_color: '#f4f4f4',
-      description: 'My Personal Resume Website"',
+      description: 'Petousis Menelaos Front-end Dev Resume site"',
       lang: 'en-US',
-      categories: ['cv', 'resume', 'portfolio', 'web', 'developer', 'development', 'menepet']
+      categories: ['cv', 'resume', 'portfolio', 'web', 'developer', 'development', 'menepet', 'front end']
     },
     meta: {
-      name: 'Petousis Menelaos',
+      name: 'Petousis Menelaos Front Dev',
       author: 'Petousis Menelaos',
-      description: 'My Personal Resume Website"',
+      description: 'Petousis Menelaos Front Dev Resume site"',
       theme_color: '#f4f4f4'
     }
   },
