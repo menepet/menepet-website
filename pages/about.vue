@@ -47,7 +47,7 @@
             <li><span class="title-underline">Freelance</span><span class="value">Available</span></li>
           </ul>
           <b-button to="/resume" pill variant="outline-info" class="mt-3 mb-4">
-            Download Resume
+            Continue to Resume
           </b-button>
         </b-col>
       </b-row>

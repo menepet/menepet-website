@@ -77,11 +77,11 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col">
               <div data-netlify-recaptcha="true" />
             </div>
-          </div>
+          </div> -->
           <b-row>
             <b-col>
               <b-button type="submit" pill variant="outline-info" class="mt-3 mb-4">
