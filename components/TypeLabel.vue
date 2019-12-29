@@ -3,9 +3,9 @@
     <pre id="typewriter" @click="goToAbout">
 <span class="var-highlight">const</span> menePet = {
       name: <span class="string-highlight">'Petousis Menelaos'</span>,
-      type: <span class="string-highlight">'Front End Dev/Freelancer'</span>,
+      type: <span class="string-highlight">'Front-End Freelancer'</span>,
       location: <span class="string-highlight">'Athens, Greece'</span>,
-      prop: [<span class="string-highlight">'Javascript frameworks'</span>,
+      prop: [<span class="string-highlight">'Javascript &#x214B; VueJs</span>,
              <span class="string-highlight">'HTML5'</span>,
              <span class="string-highlight">'SCSS'</span>];
 };
@@ -152,8 +152,9 @@ export default {
 @media screen and (max-width: 767px) {
     #typewriter {
         font-size: 1em;
-        width: 360px;
-        width: 100vw;
+        width: 350px;
+        width: 98vw;
+        margin-left: 2vw;
         height: 250px;
     }
 }

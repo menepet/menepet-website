@@ -38,7 +38,7 @@ export default {
           title: 'Front End Developer',
           location: 'YouP..n',
           // location: 'Wind Hellas',
-          descr: `Front-end Developer trying new technologies such as PWA, AMP and Js Frameworks.`,
+          descr: `Working as Front-end Developer & trying new technologies such as PWA, AMP and VueJs.`,
           from: 'Jan. 2020',
           to: 'now'
         },

@@ -7,16 +7,15 @@
           <h3>
             Front End Developer
           </h3>
-          <p>
-            Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi
-            labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est
-            vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum
+          <p>Hi There, i’m Menelaos from Athens, Greece and glad to see you here! </p>
+          <p>With a Bachelor’s degree in Computer Science and hands-on experience using JavaScript
+            to create and implement software applications, i've been working since 2015 as a professional
+            Web Developer and i'm focused on Front End.
           </p>
-          <p>Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid
-            excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis
-            sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus
-            ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit
-            porro praesentium excepturi. Alias ab consequatur?
+          <p>My motivation is to be challenged with projects that require me to work outside
+            my comfort and knowledge set, as continuing to learn new Js frameworks and development
+            techniques/architectures as PWA, are important to me. In my free time I like to deal with music and martial arts.
+            Feel free to continue in the Resume section :)
           </p>
           <div class="my-4 w-75">
             <img class="img-fluid" src="~/assets/images/mene-signature.svg" alt="signature">
@@ -92,7 +91,7 @@ export default {
           progress: 80
         },
         {
-          skill: 'SCSS / SASS',
+          skill: 'SCSS / CSS',
           progress: 70
         },
         {
@@ -104,7 +103,7 @@ export default {
           progress: 53
         },
         {
-          skill: 'ECMA',
+          skill: 'ECMAScript',
           progress: 80
         },
         {
@@ -124,8 +123,8 @@ export default {
           progress: 64
         },
         {
-          skill: 'Git',
-          progress: 83
+          skill: 'Apache Cordova',
+          progress: 63
         },
         {
           skill: 'Linux',

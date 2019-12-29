@@ -66,19 +66,19 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'Petousis Menelaos Front Dev',
-      short_name: 'menepet front end dev',
+      name: 'Petousis Menelaos | Personal Website',
+      short_name: 'Petousis Menelaos | Personal Website',
       background_color: '#f4f4f4',
-      theme_color: '#f4f4f4',
+      theme_color: '#668fab',
       description: 'Petousis Menelaos Front-end Dev Resume site"',
       lang: 'en-US',
       categories: ['cv', 'resume', 'portfolio', 'web', 'developer', 'development', 'menepet', 'front end']
     },
     meta: {
-      name: 'Petousis Menelaos Front Dev',
+      name: 'Petousis Menelaos Front-End Developer',
       author: 'Petousis Menelaos',
-      description: 'Petousis Menelaos Front Dev Resume site"',
-      theme_color: '#f4f4f4'
+      description: 'Petousis Menelaos Front-End Dev Resume site"',
+      theme_color: '#668fab'
     }
   },
   /*
