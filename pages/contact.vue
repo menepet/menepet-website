@@ -14,15 +14,15 @@
           <b-row>
             <b-col md="6">
               <div class="form-group">
-                <h4 for="form_name">Firstname *</h4>
+                <h4 for="form_name">Name *</h4>
                 <input
                   id="form_name"
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder="Please enter your firstname *"
+                  placeholder="Please enter your name"
                   required="required"
-                  data-error="Firstname is required."
+                  data-error="Name is required."
                 >
                 <div class="help-block with-errors" />
               </div>
@@ -33,7 +33,7 @@
                   type="email"
                   name="email"
                   class="form-control"
-                  placeholder="Please enter your email *"
+                  placeholder="Please enter your email"
                   required="required"
                   data-error="Valid email is required."
                 >
@@ -67,7 +67,7 @@
                   id="form_message"
                   name="message"
                   class="form-control"
-                  placeholder="Message for me *"
+                  placeholder="Message for me"
                   rows="4"
                   required="required"
                   data-error="Please, leave us a message."
@@ -78,7 +78,6 @@
           </b-row>
           <b-row>
             <b-col>
-
               <b-button type="submit" pill variant="outline-info" class="mt-3 mb-4">
                 Send message
               </b-button>
