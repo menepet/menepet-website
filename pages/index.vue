@@ -1,17 +1,15 @@
 <template>
   <div>
-    <logo style="margin: 50px auto; display: block;" />
+    <img class="icon" src="~/static/icon.svg" style="" alt="home logo">
     <type-label />
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import TypeLabel from '~/components/TypeLabel.vue'
 
 export default {
   components: {
-    Logo,
     TypeLabel
   },
   head() {
@@ -21,3 +19,28 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.icon {
+  animation: 1s appear;
+  width: 300px;
+  margin: 5% auto;
+  display: block;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .icon {
+      width: 180px;
+      margin: 10% auto;
+    }
+}
+</style>

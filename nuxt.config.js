@@ -9,7 +9,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description ||
+        'The Personal Website of Developer Petousis Menelaos. Here you can check the Resume and contact also with this guy!'
+      },
+      { hid: 'keywords', name: 'keywords', content: 'cv, resume, portfolio, web, developer, development, menepet, front end' },
+      { hid: 'author', name: 'author', content: 'Petousis Menelaos' }
     ],
     script: [
       { src: 'https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js' }

@@ -89,7 +89,7 @@
               </b-button>
             </b-col>
           </b-row>
-          <b-row>
+          <b-row class="mb-4">
             <b-col>
               <p class="text-muted">
                 <strong>*</strong> All these fields are required.
