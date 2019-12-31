@@ -86,9 +86,9 @@ export default {
       categories: ['cv', 'resume', 'portfolio', 'web', 'developer', 'development', 'menepet', 'front end']
     },
     meta: {
-      name: 'Petousis Menelaos Front-End Developer',
+      name: 'Petousis Menelaos | Front-End Developer',
       author: 'Petousis Menelaos',
-      description: 'Petousis Menelaos Front-End Dev Resume site"',
+      description: 'Petousis Menelaos | Front-End Developer Personal site with my resume and ability to contact me!',
       theme_color: '#668fab'
     }
   },
