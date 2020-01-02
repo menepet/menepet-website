@@ -36,8 +36,7 @@ export default {
       experience: [
         {
           title: 'Front End Developer',
-          location: '',
-          // location: 'Wind Hellas',
+          location: 'Wind Hellas',
           descr: `Working as Front-end Developer & trying new technologies such as PWA, AMP and VueJs.`,
           from: 'Jan. 2020',
           to: 'now'
