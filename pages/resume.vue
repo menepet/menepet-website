@@ -44,7 +44,7 @@ export default {
         {
           title: 'Front End Developer',
           location: 'MPASS Ltd, Athens',
-          descr: `Web Developer with emphasis on the Fron-end. At first I was doing fullstack work,
+          descr: `Web Developer with emphasis on the Front-end. At first I was doing fullstack work,
             but along the way I used different Front-end tools like VueJs/Nuxt, EmberJs, MeteorJs,
             GoJs, BackBoneJS, Apache Cordova and more. Check my project list below for more ...`,
           from: 'Oct. 2016',
