@@ -62,7 +62,8 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/sitemap'
   ],
   googleAnalytics: {
     id: 'UA-155164825-1'
@@ -91,6 +92,19 @@ export default {
       description: 'Petousis Menelaos | Front-End Developer Personal site with my resume and ability to contact me!',
       theme_color: '#668fab'
     }
+  },
+  sitemap: {
+    hostname: 'https://menepet.me',
+    gzip: true,
+    exclude: [
+      '/portfolio'
+    ],
+    routes: [
+      '/index',
+      '/about',
+      '/contact',
+      '/resume'
+    ]
   },
   /*
   ** Build configuration

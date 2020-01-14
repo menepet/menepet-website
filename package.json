@@ -23,6 +23,7 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/google-analytics": "^2.2.2",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/sitemap": "^2.0.1",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "nuxt": "^2.11.0"
