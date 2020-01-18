@@ -45,9 +45,11 @@
             </li>
             <li><span class="title-underline">Freelance</span><span class="value">Available</span></li>
           </ul>
-          <b-button to="/resume" pill variant="outline-info" class="mt-3 mb-4">
-            Continue to Resume
-          </b-button>
+          <div class="d-none d-lg-block">
+            <b-button to="/resume" pill variant="outline-info" class="mt-3 mb-4">
+              Continue to Resume
+            </b-button>
+          </div>
         </b-col>
       </b-row>
       <b-row>
@@ -57,7 +59,7 @@
           </h3>
         </b-col>
       </b-row>
-      <b-row style="margin-bottom: 100px;">
+      <b-row style="margin-bottom: 80px;">
         <b-col v-for="(item, index) in skills" :key="index" lg="6">
           <section>
             <h4>{{ item.skill }}</h4>
@@ -65,6 +67,13 @@
               <span :style="`width:${item.progress}%;`"><span class="progress" /></span>
             </div>
           </section>
+        </b-col>
+      </b-row>
+      <b-row class="d-lg-none d-sm-block">
+        <b-col class="text-center">
+          <b-button to="/resume" pill variant="outline-info" class="mt-3 mb-4">
+            Continue to Resume
+          </b-button>
         </b-col>
       </b-row>
     </b-container>
@@ -124,7 +133,7 @@ export default {
         },
         {
           skill: 'Apache Cordova',
-          progress: 63
+          progress: 53
         },
         {
           skill: 'Linux',
