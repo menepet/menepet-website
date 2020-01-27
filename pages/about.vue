@@ -30,8 +30,8 @@
             <li><span class="title-underline">Age</span><span class="value">{{ currentAge }} years old</span></li>
             <li><span class="title-underline">Residence</span><span class="value">Athens, Greece</span></li>
             <li><span class="title-underline">Address</span><span class="value">Vrilissia</span></li>
-            <li><span class="title-underline">Email</span><span class="value">menepet@gmail.com</span></li>
-            <li><span class="title-underline">Phone</span><span class="value">(+30) 693 222 57 60</span></li>
+            <li><span class="title-underline">Email</span><span class="value"><a href="mailto:menepet@gmail.com">menepet@gmail.com</a></span></li>
+            <li><span class="title-underline">Phone</span><span class="value"><a href="tel:6932225760">+30 693 222 57 60</a></span></li>
             <li><span class="title-underline">LinkedIn</span>
               <a target="_blank" href="https://www.linkedin.com/in/menelaospetousis/" class="value">linkedin.com/menelaospetousis</a>
             </li>
