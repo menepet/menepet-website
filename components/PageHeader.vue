@@ -1,7 +1,7 @@
 <template>
   <div class="page-heading">
     <span class="icon"><i class="lnr" :class="param.icon" /></span>
-    <h2>{{ param.title }}</h2>
+    <h1>{{ param.title }}</h1>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
 
-    &> h2 {
+    &> h1 {
         color: $main-color;
         font-size: 36px;
         font-weight: 700;
