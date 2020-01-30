@@ -151,7 +151,12 @@ export default {
   },
   head() {
     return {
-      title: 'About | Petousis Menelaos'
+      title: 'About | Petousis Menelaos',
+      meta: [{
+        vmid: 'description',
+        name: 'description',
+        content: 'More about Petousis Menelaos'
+      }]
     }
   }
 }

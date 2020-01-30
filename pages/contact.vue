@@ -118,6 +118,11 @@ export default {
   head() {
     return {
       title: 'Contact | Petousis Menelaos',
+      meta: [{
+        vmid: 'description',
+        name: 'description',
+        content: 'Feel free to contact me here'
+      }],
       script: [
         { src: 'https://platform.linkedin.com/badges/js/profile.js' }
       ]

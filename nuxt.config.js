@@ -13,9 +13,13 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description ||
-        'The Personal Website of Developer Petousis Menelaos. Here you can check the Resume and contact also with this guy!'
+        'My Personal Website as a Developer. Here you can check my Resume and feel free to contact me!'
       },
-      { hid: 'keywords', name: 'keywords', content: 'cv, resume, portfolio, web, developer, development, menepet, front end' },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'cv, resume, portfolio, web, developer, development, menepet, Petousis, Menelaos, front end'
+      },
       { hid: 'author', name: 'author', content: 'Petousis Menelaos' }
     ],
     script: [

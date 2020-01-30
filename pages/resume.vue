@@ -212,7 +212,12 @@ export default {
   },
   head() {
     return {
-      title: 'My Resume | Petousis Menelaos'
+      title: 'My Resume | Petousis Menelaos',
+      meta: [{
+        vmid: 'description',
+        name: 'description',
+        content: 'Petousis Menelaos Resume and professional experience'
+      }]
     }
   }
 }

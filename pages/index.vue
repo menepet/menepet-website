@@ -14,7 +14,12 @@ export default {
   },
   head() {
     return {
-      title: 'Petousis Menelaos | Front-End Developer'
+      title: 'Petousis Menelaos | Front-End Developer',
+      meta: [{
+        vmid: 'description',
+        name: 'description',
+        content: 'Petousis Menelaos Professional site Homepage'
+      }]
     }
   }
 }
