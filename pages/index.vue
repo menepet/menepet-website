@@ -18,7 +18,7 @@ export default {
       meta: [{
         vmid: 'description',
         name: 'description',
-        content: 'Petousis Menelaos Professional site Homepage'
+        content: 'My Personal Website as a Developer. Here you can check my Resume and feel free to contact me!'
       }]
     }
   }
