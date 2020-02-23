@@ -89,6 +89,10 @@ export default {
       author: 'Petousis Menelaos',
       description: 'Petousis Menelaos | Front-End Developer Personal site with my resume and ability to contact me!',
       theme_color: '#668fab'
+    },
+    workbox: {
+      offlineAnalytics: true,
+      offlineStrategy: 'StaleWhileRevalidate'
     }
   },
   sitemap: {
