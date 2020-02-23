@@ -21,7 +21,11 @@
           <div class="simplebar-content">
             <div class="position-relative">
               <h2 class="header-name">Petousis Menelaos</h2>
-              <img src="~/assets/images/menepet-logo.jpg" class="w-100" alt="profile-pic">
+              <picture>
+                <source srcset="~/assets/images/menepet-logo.webp" type="image/webp" class="w-100">
+                <source srcset="~/assets/images/menepet-logo.jpg" type="image/jpeg" class="w-100">
+                <img src="~/assets/images/menepet-logo.jpg" alt="profile-pic" class="w-100">
+              </picture>
             </div>
             <!--Nav Menus-->
             <nav class="nav-menu">

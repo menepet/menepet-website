@@ -17,9 +17,6 @@
             techniques/architectures as PWA, are important to me. In my free time I like to deal with music and martial arts.
             Feel free to continue in the Resume section :)
           </p>
-          <div class="my-4 w-75">
-            <img class="img-fluid" src="~/assets/images/mene-signature.svg" alt="signature">
-          </div>
         </b-col>
         <b-col offset-lg="2" lg="4">
           <h3>
