@@ -92,8 +92,21 @@ export default {
     },
     workbox: {
       offlineAnalytics: true,
-      offlineStrategy: 'StaleWhileRevalidate'
+      offlineStrategy: 'StaleWhileRevalidate',
+      runtimeCaching: [
+        {
+          urlPattern: 'https://cdn.linearicons.com/.*',
+          strategyOptions: {
+            cacheName: 'linear-icons'
+          }
+        }
+      ]
     }
+  },
+  generate: {
+    exclude: [
+      /^(?=.*\portfolio\b).*$/
+    ]
   },
   sitemap: {
     hostname: 'https://menepet.me',
