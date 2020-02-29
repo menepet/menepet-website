@@ -14,7 +14,12 @@ export default {
         name: 'keywords',
         content: 'cv, resume, portfolio, web, developer, development, menepet, Petousis, Menelaos, front end'
       },
-      { hid: 'author', name: 'author', content: 'Petousis Menelaos' }
+      { hid: 'author', name: 'author', content: 'Petousis Menelaos' },
+      {
+        hid: 'google-site-verification',
+        name: 'google-site-verification',
+        content: '9sEWsJkZcwBqggjqv64dtaxGbzGJbMXzqov0MLM0F34'
+      }
     ],
     script: [
       { src: 'https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js' }
