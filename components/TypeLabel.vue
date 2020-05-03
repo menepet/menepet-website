@@ -35,7 +35,7 @@ export default {
       let tag = ''
       let writingTag = false
       let tagOpen = false
-      const typeSpeed = 200
+      const typeSpeed = 50
       let tempTypeSpeed = 0
 
       const type = function() {
