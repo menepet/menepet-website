@@ -19,6 +19,18 @@ export default {
         hid: 'google-site-verification',
         name: 'google-site-verification',
         content: '9sEWsJkZcwBqggjqv64dtaxGbzGJbMXzqov0MLM0F34'
+      }, {
+        vmid: 'og:title',
+        name: 'og:title',
+        content: 'About | Petousis Menelaos'
+      }, {
+        vmid: 'description',
+        name: 'description',
+        content: 'Petousis Menelaos | Personal site with my resume and ability to contact me!'
+      }, {
+        vmid: 'og:description',
+        name: 'og:description',
+        content: 'Petousis Menelaos | Personal site with my resume and ability to contact me!'
       }
     ],
     script: [
@@ -90,8 +102,8 @@ export default {
     },
     meta: {
       name: 'Petousis Menelaos | Front-End Developer',
-      author: 'Petousis Menelaos',
-      description: 'Petousis Menelaos | Front-End Developer Personal site with my resume and ability to contact me!',
+      author: 'Petousis Menelaos <menepet@gmail.com>',
+      description: 'Petousis Menelaos | Personal site with my resume and ability to contact me!',
       theme_color: '#668fab'
     },
     workbox: {

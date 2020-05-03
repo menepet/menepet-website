@@ -126,6 +126,7 @@ export default {
         name: 'description',
         content: 'Feel free to contact me here!'
       }, {
+        vmid: 'og:description',
         name: 'og:description',
         content: 'Feel free to contact me here!'
       }],

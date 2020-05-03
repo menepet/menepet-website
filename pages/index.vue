@@ -16,8 +16,15 @@ export default {
     return {
       title: 'Petousis Menelaos | Front-End Developer',
       meta: [{
+        name: 'og:title',
+        content: 'About | Petousis Menelaos'
+      }, {
         vmid: 'description',
         name: 'description',
+        content: 'My Personal Website as a Developer. Here you can check my Resume and feel free to contact me!'
+      }, {
+        vmid: 'og:description',
+        name: 'og:description',
         content: 'My Personal Website as a Developer. Here you can check my Resume and feel free to contact me!'
       }]
     }

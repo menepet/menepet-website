@@ -138,9 +138,16 @@ export default {
     return {
       title: 'About | Petousis Menelaos',
       meta: [{
+        name: 'og:title',
+        content: 'About | Petousis Menelaos'
+      }, {
         vmid: 'description',
         name: 'description',
-        content: 'More about Petousis Menelaos'
+        content: 'Learn more about my experience as a dev!'
+      }, {
+        vmid: 'og:description',
+        name: 'og:description',
+        content: 'Learn more about my experience as a dev!'
       }]
     }
   }
