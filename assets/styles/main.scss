@@ -86,15 +86,19 @@ body::-webkit-scrollbar-thumb {
 @font-face {
     font-family: "Droid Sans";
     src: url('~assets/fonts/droid-sans/DroidSans.eot'); /* IE9 Compat Modes */
-    src: url("~assets/fonts/droid-sans/DroidSans.ttf") format("truetype"), /* Safari, Android, iOS */
+    src: local('sans-serif'),
+        url("~assets/fonts/droid-sans/DroidSans.ttf") format("truetype"), /* Safari, Android, iOS */
         url("~assets/fonts/droid-sans/DroidSans.woff") format("woff"), /* Pretty Modern Browsers */
         url("~assets/fonts/droid-sans/DroidSans.woff2") format("woff2"); /* Super Modern Browsers */
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Droid Sans Bold";
     src: url('~assets/fonts/droid-sans/DroidSans-Bold.eot'); /* IE9 Compat Modes */
-    src: url("~assets/fonts/droid-sans/DroidSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    src: local('sans-serif'),
+        url("~assets/fonts/droid-sans/DroidSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
         url("~assets/fonts/droid-sans/DroidSans-Bold.woff") format("woff"), /* Pretty Modern Browsers */
         url("~assets/fonts/droid-sans/DroidSans-Bold.woff2") format("woff2"); /* Super Modern Browsers */
+    font-display: swap;
 }

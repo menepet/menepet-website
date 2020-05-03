@@ -21,9 +21,9 @@
 </template>
 
 <script>
+import { EventBus } from '~/plugins/event-bus.js'
 import PageHeader from '~/components/PageHeader'
 import ResumeList from '~/components/ResumeList'
-import { EventBus } from '~/plugins/event-bus.js'
 
 export default {
   name: 'AboutPage',
@@ -39,7 +39,20 @@ export default {
           location: 'Wind Hellas',
           descr: `Working as Front-end Developer & trying new technologies such as PWA, AMP and VueJs.`,
           from: 'Jan. 2020',
-          to: 'now'
+          to: 'now',
+          projects: [
+            {
+              title: 'Redesigned WIND Hellas Contact Page',
+              descr: `New Contact page for all customers who want support or some contact info with the provider.`,
+              technology: 'VanillaJs',
+              link: 'https://www.wind.gr/gr/epikoinonia'
+            }, {
+              title: 'WIND Support',
+              descr: `PWA implementation and parts of UI within this part of website`,
+              technology: 'PWA',
+              link: 'https://www.wind.gr/support/idiotes/'
+            }
+          ]
         },
         {
           title: 'Front End Developer',
@@ -214,8 +227,14 @@ export default {
     return {
       title: 'My Resume | Petousis Menelaos',
       meta: [{
+        name: 'og:title',
+        content: 'My Resume | Petousis Menelaos'
+      }, {
         vmid: 'description',
         name: 'description',
+        content: 'Petousis Menelaos Resume and professional experience'
+      }, {
+        name: 'og:description',
         content: 'Petousis Menelaos Resume and professional experience'
       }]
     }

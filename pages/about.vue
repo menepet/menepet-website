@@ -26,17 +26,16 @@
             <li><span class="title-underline">Name</span><span class="value">Petousis Menelaos</span></li>
             <li><span class="title-underline">Age</span><span class="value">{{ currentAge }} years old</span></li>
             <li><span class="title-underline">Residence</span><span class="value">Athens, Greece</span></li>
-            <li><span class="title-underline">Address</span><span class="value">Vrilissia</span></li>
             <li><span class="title-underline">Email</span><span class="value"><a href="mailto:menepet@gmail.com">menepet@gmail.com</a></span></li>
             <li><span class="title-underline">Phone</span><span class="value"><a href="tel:6932225760">+30 693 222 57 60</a></span></li>
             <li><span class="title-underline">LinkedIn</span>
-              <a target="_blank" href="https://www.linkedin.com/in/menelaospetousis/" class="value">linkedin.com/menelaospetousis</a>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/menelaospetousis/" class="value">linkedin.com/menelaospetousis</a>
             </li>
             <li><span class="title-underline">Stackoverflow</span>
-              <a target="_blank" href="https://stackoverflow.com/users/3074131/mene" class="value">stackoverflow.com/mene</a>
+              <a target="_blank" rel="noopener" href="https://stackoverflow.com/users/3074131/mene" class="value">stackoverflow.com/mene</a>
             </li>
             <li><span class="title-underline">Google Play</span>
-              <a target="_blank" href="https://play.google.com/store/apps/developer?id=Petousis+Menelaos" class="value">
+              <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/developer?id=Petousis+Menelaos" class="value">
                 play.google.com/menepet
               </a>
             </li>
@@ -91,48 +90,37 @@ export default {
         {
           skill: 'VueJs / Nuxt',
           progress: 87
-        },
-        {
+        }, {
+          skill: 'PWA',
+          progress: 73
+        }, {
           skill: 'EmberJs',
           progress: 80
-        },
-        {
+        }, {
           skill: 'SCSS / CSS',
           progress: 70
-        },
-        {
+        }, {
           skill: 'HTML',
           progress: 85
-        },
-        {
-          skill: 'PWA',
-          progress: 53
-        },
-        {
+        }, {
           skill: 'ECMAScript',
           progress: 80
-        },
-        {
+        }, {
           skill: 'State Management',
           progress: 76
-        },
-        {
+        }, {
           skill: 'Bootstrap',
           progress: 81
-        },
-        {
+        }, {
           skill: 'Java',
           progress: 60
-        },
-        {
+        }, {
           skill: 'Webpack',
           progress: 64
-        },
-        {
+        }, {
           skill: 'Apache Cordova',
           progress: 53
-        },
-        {
+        }, {
           skill: 'Linux',
           progress: 73
         }

@@ -26,7 +26,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdn.linearicons.com/free/1.0.0/icon-font.min.css' }
+      { rel: 'stylesheet', href: 'https://cdn.linearicons.com/free/1.0.0/icon-font.min.css' },
+      { rel: 'preconnect', href: 'https://www.google-analytics.com' }
     ]
   },
   /*
@@ -75,9 +76,7 @@ export default {
    * Sass file import
    */
   styleResources: {
-    scss: [
-      'assets/styles/main.scss'
-    ]
+    scss: ['assets/styles/main.scss']
   },
   pwa: {
     manifest: {
@@ -101,6 +100,7 @@ export default {
       runtimeCaching: [
         {
           urlPattern: 'https://cdn.linearicons.com/.*',
+          handler: 'cacheFirst',
           strategyOptions: {
             cacheName: 'linear-icons'
           }

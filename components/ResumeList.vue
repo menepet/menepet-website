@@ -8,9 +8,7 @@
         <article>
           <h4>{{ item.title }}</h4>
           <h5>{{ item.location }}</h5>
-          <p class="info">
-            {{ item.descr }}
-          </p>
+          <p class="info">{{ item.descr }}</p>
         </article>
 
         <span class="year">

@@ -119,12 +119,21 @@ export default {
     return {
       title: 'Contact | Petousis Menelaos',
       meta: [{
+        name: 'og:title',
+        content: 'Contact | Petousis Menelaos'
+      }, {
         vmid: 'description',
         name: 'description',
-        content: 'Feel free to contact me here'
+        content: 'Feel free to contact me here!'
+      }, {
+        name: 'og:description',
+        content: 'Feel free to contact me here!'
       }],
       script: [
         { src: 'https://platform.linkedin.com/badges/js/profile.js' }
+      ],
+      link: [
+        { rel: 'preconnect', href: 'https://platform.linkedin.com' }
       ]
     }
   }
