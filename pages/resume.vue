@@ -36,7 +36,7 @@ export default {
       experience: [
         {
           title: 'Front End Developer',
-          location: 'Wind Hellas',
+          location: 'Wind Hellas, Athens',
           descr: `Working as Front-end Developer & trying new technologies such as PWA, AMP and VueJs.`,
           from: 'Jan. 2020',
           to: 'now',
@@ -48,8 +48,8 @@ export default {
               link: 'https://www.wind.gr/gr/epikoinonia'
             }, {
               title: 'WIND Support',
-              descr: `PWA implementation and parts of UI within this part of website`,
-              technology: 'PWA',
+              descr: `PWA & AMP implementation for WIND Support`,
+              technology: 'PWA / AMP',
               link: 'https://www.wind.gr/support/idiotes/'
             }
           ]

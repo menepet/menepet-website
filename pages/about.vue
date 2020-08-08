@@ -94,26 +94,20 @@ export default {
           skill: 'PWA',
           progress: 73
         }, {
-          skill: 'EmberJs',
-          progress: 80
-        }, {
           skill: 'SCSS / CSS',
           progress: 70
         }, {
-          skill: 'HTML',
-          progress: 85
+          skill: 'AMP',
+          progress: 45
         }, {
-          skill: 'ECMAScript',
+          skill: 'EmberJs',
           progress: 80
         }, {
-          skill: 'State Management',
-          progress: 76
-        }, {
-          skill: 'Bootstrap',
-          progress: 81
+          skill: 'Node Js',
+          progress: 60
         }, {
           skill: 'Java',
-          progress: 60
+          progress: 55
         }, {
           skill: 'Webpack',
           progress: 64

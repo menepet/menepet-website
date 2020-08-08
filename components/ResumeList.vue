@@ -51,6 +51,8 @@ export default {
 <style lang="scss" scoped>
 h2 {
     padding-left: 55px;
+    text-decoration: underline;
+    text-decoration-color: $main-color;
 }
 ul.experience {
     font-family: "Droid Sans";
