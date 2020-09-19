@@ -1,8 +1,8 @@
 {
   "name": "menepet-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My Personal Resume Website",
-  "author": "Petousis Menelaos",
+  "author": "Petousis Menelaos <menepet@gmail.com>",
   "private": true,
   "keywords": [
     "menepet",
@@ -21,12 +21,12 @@
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/google-analytics": "^2.2.2",
-    "@nuxtjs/pwa": "^3.0.0-0",
-    "@nuxtjs/sitemap": "^2.0.1",
-    "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.1.0",
-    "nuxt": "^2.11.0"
+    "@nuxtjs/google-analytics": "^2.4.2",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "nuxt": "^2.14.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

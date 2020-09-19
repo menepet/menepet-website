@@ -53,6 +53,7 @@ h2 {
     padding-left: 55px;
     text-decoration: underline;
     text-decoration-color: $main-color;
+    font-size: 20px;
 }
 ul.experience {
     font-family: "Droid Sans";
@@ -73,7 +74,7 @@ ul.experience {
             padding: 0 7%;
             h4 {
                 font-family: "Droid Sans Bold";
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 700;
                 letter-spacing: .5px;
                 line-height: 26px;

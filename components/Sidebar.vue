@@ -220,7 +220,7 @@ header .header-mobile {
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       color: #fff;
-      font-size: 24px;
+      font-size: 14px;
       line-height: 50px;
       white-space: nowrap;
   }
