@@ -128,6 +128,7 @@ export default {
   sitemap: {
     hostname: 'https://menepet.me',
     gzip: true,
+    lastmod: new Date(),
     exclude: [
       '/portfolio'
     ],
