@@ -1,11 +1,11 @@
 
 export default {
-  mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || 'Petousis Menelaos | Front-End Developer',
+    title: 'Petousis Menelaos | Front-End Developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
