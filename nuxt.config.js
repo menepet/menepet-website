@@ -142,6 +142,30 @@ export default {
   ** Build configuration
   */
   build: {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    },
+
+    html: {
+      minify: {
+        minifyCSS: true,
+        minifyJS: true,
+        removeComments: true,
+        collapseInlineTagWhitespace: true,
+        collapseWhitespace: true
+      }
+    },
+
     /*
     ** You can extend webpack config here
     */
