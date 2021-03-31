@@ -78,6 +78,7 @@
 
 <script>
 import PageHeader from '~/components/PageHeader'
+import skills from '~/static/mock/skills.json'
 
 export default {
   name: 'AboutPage',
@@ -86,39 +87,7 @@ export default {
   },
   data() {
     return {
-      skills: [
-        {
-          skill: 'VueJs / Nuxt',
-          progress: 87
-        }, {
-          skill: 'PWA',
-          progress: 73
-        }, {
-          skill: 'SCSS / CSS',
-          progress: 70
-        }, {
-          skill: 'AMP',
-          progress: 45
-        }, {
-          skill: 'EmberJs',
-          progress: 80
-        }, {
-          skill: 'Node Js',
-          progress: 60
-        }, {
-          skill: 'Java',
-          progress: 55
-        }, {
-          skill: 'Webpack',
-          progress: 64
-        }, {
-          skill: 'Apache Cordova',
-          progress: 53
-        }, {
-          skill: 'Linux',
-          progress: 73
-        }
-      ]
+      skills
     }
   },
   computed: {

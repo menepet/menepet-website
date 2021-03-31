@@ -1,0 +1,33 @@
+[
+  {
+    "skill": "VueJs / NuxtJs",
+    "progress": 87
+  }, {
+    "skill": "PWA",
+    "progress": 73
+  }, {
+    "skill": "SCSS / Postcss",
+    "progress": 70
+  }, {
+    "skill": "Web Components / JSX",
+    "progress": 55
+  }, {
+    "skill": "Docker",
+    "progress": 61
+  }, {
+    "skill": "AMP",
+    "progress": 45
+  }, {
+    "skill": "EmberJs",
+    "progress": 80
+  }, {
+    "skill": "Node Js",
+    "progress": 67
+  }, {
+    "skill": "Webpack",
+    "progress": 64
+  }, {
+    "skill": "Linux",
+    "progress": 73
+  }
+]

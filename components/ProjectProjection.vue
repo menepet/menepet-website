@@ -9,9 +9,9 @@
           <br><span class="title-underline">Description</span>{{ item.descr }}
         </template>
 
-        <template v-if="item.technology">
-          <br><span class="title-underline">Technology</span>
-          <span class="tech">#{{ item.technology }}</span>
+        <template v-if="item.technologies">
+          <br><span class="title-underline">technologies</span>
+          <span v-for="tech in item.technologies" :key="tech" class="tech">#{{ tech }}</span>
         </template>
 
         <template v-if="item.customer">
@@ -67,6 +67,7 @@ ul {
       color: $hashColor;
       border-radius: 20px;
       padding: 3px 6px;
+      margin-right: 7px;
       word-break: break-word;
     }
     a {
