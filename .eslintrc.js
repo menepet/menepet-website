@@ -13,6 +13,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    "vue/comment-directive": "off",
     "vue/max-attributes-per-line": [2, {
       "singleline": 10,
       "multiline": {

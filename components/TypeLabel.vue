@@ -1,16 +1,16 @@
 <template>
   <div class="text-left">
     <pre id="typewriter" @click="goToAbout">
-<span class="var-highlight">const</span> menePet = {
-      name: <span class="string-highlight">'Petousis Menelaos'</span>,
-      type: <span class="string-highlight">'Front-End Freelancer'</span>,
-      location: <span class="string-highlight">'Athens, Greece'</span>,
-      prop: [<span class="string-highlight">'Javascript &#x214B; VueJs</span>,
-             <span class="string-highlight">'HTML5'</span>,
-             <span class="string-highlight">'SCSS'</span>];
-};
-<span class="comment">// After initialization, click </span><span class="link">here</span>
-</pre>
+      <span class="var-highlight">const</span> menePet = {
+            name: <span class="string-highlight">'Petousis Menelaos'</span>,
+            type: <span class="string-highlight">'Front-End Freelancer'</span>,
+            location: <span class="string-highlight">'Athens, Greece'</span>,
+            prop: [<span class="string-highlight">'Javascript &#x214B; VueJs</span>,
+                  <span class="string-highlight">'HTML5'</span>,
+                  <span class="string-highlight">'SCSS'</span>];
+      };
+      <span class="comment">// After initialization, click </span><span class="link">here</span>
+    </pre>
   </div>
 </template>
 
