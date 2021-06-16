@@ -24,7 +24,7 @@
               <picture>
                 <source srcset="~/assets/images/menepet-logo.webp" type="image/webp" class="w-100">
                 <source srcset="~/assets/images/menepet-logo.jpg" type="image/jpeg" class="w-100">
-                <img src="~/assets/images/menepet-logo.jpg" alt="profile-pic" class="w-100">
+                <img width="199" height="199" src="~/assets/images/menepet-logo.jpg" alt="profile-pic" class="w-100">
               </picture>
             </div>
             <!--Nav Menus-->

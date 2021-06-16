@@ -97,9 +97,7 @@
             </b-col>
           </b-row>
           <div class="footnote">
-            <div>
-              <i>PS: Hope to see you again here :)</i>
-            </div>
+            <i>PS: Hope to see you again here :)</i>
           </div>
         </div>
       </form>

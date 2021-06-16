@@ -3,11 +3,11 @@
     <pre id="typewriter" @click="goToAbout">
       <span class="var-highlight">const</span> menePet = {
             name: <span class="string-highlight">'Petousis Menelaos'</span>,
-            type: <span class="string-highlight">'Front-End Freelancer'</span>,
+            type: <span class="string-highlight">'Software Engineer'</span>,
             location: <span class="string-highlight">'Athens, Greece'</span>,
-            prop: [<span class="string-highlight">'Javascript &#x214B; VueJs</span>,
-                  <span class="string-highlight">'HTML5'</span>,
-                  <span class="string-highlight">'SCSS'</span>];
+            skills: [<span class="string-highlight">'Javascript &#x214B; VueJs</span>,
+                  <span class="string-highlight">'SEO Experience'</span>,
+                  <span class="string-highlight">'UX Enthusiast'</span>];
       };
       <span class="comment">// After initialization, click </span><span class="link">here</span>
     </pre>

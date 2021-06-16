@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="icon" src="~/static/icon.svg" style="" alt="home logo">
+    <img class="icon" src="~/static/icon.svg" width="300" height="187" alt="home logo">
     <type-label />
   </div>
 </template>

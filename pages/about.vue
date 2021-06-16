@@ -5,17 +5,17 @@
       <b-row class="mb-4">
         <b-col class="mb-4" lg="6">
           <h3>
-            Front End Developer
+            Software Developer Engineer
           </h3>
-          <p>Hi There, i’m Menelaos from Athens, Greece and glad to see you here! </p>
-          <p>With a Bachelor’s degree in Computer Science and hands-on experience using JavaScript
-            to create and implement software applications, i've been working since 2015 as a professional
-            Web Developer and i'm focused on Front End.
+          <p>Hi There, I’m Menelaos from Athens, Greece and glad to see you here! </p>
+          <p>With a Bachelor’s degree in Computer Science and hands-on experience using vanilla JavaScript
+            to create and implement software applications, I've been working since 2015 as a professional
+            Web Software Engineer and I'm focused on Front End.
           </p>
           <p>My motivation is to be challenged with projects that require me to work outside
             my comfort and knowledge set, as continuing to learn new Js frameworks and development
-            techniques/architectures as PWA, are important to me. In my free time I like to deal with music and martial arts.
-            Feel free to continue in the Resume section :)
+            techniques/architectures, are important to me. In my free time I like to deal with music and martial arts.
+            Feel free to continue in the Resume section 🎉
           </p>
         </b-col>
         <b-col offset-lg="2" lg="4">

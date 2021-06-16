@@ -1,22 +1,9 @@
-# menepet-website
+<p align="center">
+  <img width="460" height="300" src="static/icon.png">
+</p>
 
-> My Personal Resume Website
+> Personal Resume Website
 
-## Build Setup
+Hi There, I’m Menelaos from Athens, Greece 👋
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+🚀 If you want to learn more about my interesting character 😎 & employment 💻 do not hesitate to enter and scan my [personal website](https://menepet.me/)!

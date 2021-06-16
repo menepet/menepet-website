@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Petousis Menelaos | Front-End Developer',
+    title: 'Petousis Menelaos | Software Developer Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,11 +26,11 @@ export default {
       }, {
         vmid: 'description',
         name: 'description',
-        content: 'Petousis Menelaos | Personal site with my resume and ability to contact me!'
+        content: 'Petousis Menelaos | Personal site with my Resume!'
       }, {
         vmid: 'og:description',
         name: 'og:description',
-        content: 'Petousis Menelaos | Personal site with my resume and ability to contact me!'
+        content: 'Petousis Menelaos | Personal site with my Resume!'
       }
     ],
     script: [
@@ -103,7 +103,7 @@ export default {
     meta: {
       name: 'Petousis Menelaos | Front-End Developer',
       author: 'Petousis Menelaos <menepet@gmail.com>',
-      description: 'Petousis Menelaos | Personal site with my resume and ability to contact me!',
+      description: 'Petousis Menelaos | Personal site with my Resume!',
       theme_color: '#668fab'
     },
     workbox: {
