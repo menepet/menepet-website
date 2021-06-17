@@ -33,12 +33,8 @@ export default {
         content: 'Petousis Menelaos | Personal site with my Resume!'
       }
     ],
-    script: [
-      { src: 'https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js' }
-    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdn.linearicons.com/free/1.0.0/icon-font.min.css' },
       { rel: 'preconnect', href: 'https://www.google-analytics.com' }
     ]
   },
@@ -79,11 +75,24 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-fontawesome'
   ],
+
   googleAnalytics: {
     id: 'UA-155164825-1'
   },
+
+  // https://github.com/vaso2/nuxt-fontawesome
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['faHome', 'faUser', 'faScroll', 'faEnvelope', 'faEye']
+      }
+    ]
+  },
+
   /**
    * Sass file import
    */

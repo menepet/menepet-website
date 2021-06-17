@@ -1,12 +1,14 @@
 <template>
   <div>
     <b-container>
-      <page-header :param="{ title: 'About Me', icon: 'lnr-user' }" />
+      <page-header :param="{ title: 'About Me', icon: 'user' }" />
+
       <b-row class="mb-4">
         <b-col class="mb-4" lg="6">
           <h3>
             Software Developer Engineer
           </h3>
+
           <p>Hi There, I’m Menelaos from Athens, Greece and glad to see you here! </p>
           <p>With a Bachelor’s degree in Computer Science and hands-on experience using vanilla JavaScript
             to create and implement software applications, I've been working since 2015 as a professional
@@ -22,24 +24,42 @@
           <h3>
             Personal Information
           </h3>
+
           <ul>
-            <li><span class="title-underline">Name</span><span class="value">Petousis Menelaos</span></li>
-            <li><span class="title-underline">Age</span><span class="value">{{ currentAge }} years old</span></li>
-            <li><span class="title-underline">Residence</span><span class="value">Athens, Greece</span></li>
-            <li><span class="title-underline">Email</span><span class="value"><a href="mailto:menepet@gmail.com">menepet@gmail.com</a></span></li>
+            <li>
+              <span class="title-underline">Name</span><span class="value">Petousis Menelaos</span>
+            </li>
+            <li>
+              <span class="title-underline">Age</span><span class="value">{{ currentAge }} years old</span>
+            </li>
+            <li>
+              <span class="title-underline">Residence</span><span class="value">Athens, Greece</span>
+            </li>
+            <li>
+              <span class="title-underline">Email</span>
+              <transition name="fade">
+                <a v-if="displayMail" href="mailto:menepet@gmail.com">menepet@gmail.com</a>
+                <font-awesome-icon v-else class="email-display" icon="eye" @click="displayMail = true" />
+              </transition>
+            </li>
             <!-- <li><span class="title-underline">Phone</span><span class="value"><a href="tel:6932225760">+30 693 222 57 60</a></span></li> -->
-            <li><span class="title-underline">LinkedIn</span>
+            <li>
+              <span class="title-underline">LinkedIn</span>
               <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/menelaospetousis/" class="value">linkedin.com/menelaospetousis</a>
             </li>
-            <li><span class="title-underline">Stackoverflow</span>
+            <li>
+              <span class="title-underline">Stackoverflow</span>
               <a target="_blank" rel="noopener" href="https://stackoverflow.com/users/3074131/mene" class="value">stackoverflow.com/mene</a>
             </li>
-            <li><span class="title-underline">Google Play</span>
+            <li>
+              <span class="title-underline">Google Play</span>
               <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/developer?id=Petousis+Menelaos" class="value">
                 play.google.com/menepet
               </a>
             </li>
-            <li><span class="title-underline">Freelance</span><span class="value">Available</span></li>
+            <li>
+              <span class="title-underline">Freelance</span><span class="value">Available</span>
+            </li>
           </ul>
           <div class="d-none d-lg-block">
             <b-button to="/resume" pill variant="outline-info" class="mt-3 mb-4">
@@ -87,7 +107,8 @@ export default {
   },
   data() {
     return {
-      skills
+      skills,
+      displayMail: false
     }
   },
   computed: {
@@ -125,6 +146,12 @@ ul li {
     a {
       color: $main-color;
     }
+}
+
+.email-display {
+  cursor: pointer;
+  opacity: .7;
+  &:hover { opacity: 1; }
 }
 
 section {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-container>
-      <page-header :param="{ title: 'Contact', icon: 'lnr-envelope' }" />
+      <page-header :param="{ title: 'Contact', icon: 'envelope' }" />
 
       <form
         id="contact-form"
@@ -144,12 +144,14 @@ input, textarea {
   border-color: $main-color;
 }
 .footnote {
+  display: none;
   position: absolute;
   bottom: 10px;
   opacity: 0.7;
 }
 
 @media screen and (min-width: 767px) {
+  .footnote { display: block; }
   .LI-profile-badge {
     float: right;
   }

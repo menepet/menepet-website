@@ -1,7 +1,8 @@
 <template>
   <div>
     <b-container>
-      <page-header :param="{ title: 'My Resume', icon: 'lnr-license' }" />
+      <page-header :param="{ title: 'My Resume', icon: 'scroll' }" />
+
       <span class="icon"><i class="lnr lnr-printer" @click="print" /></span>
       <span class="icon">
         <a href="/docs/Petousis_Menelaos_CV.pdf" target="_blank" class="lnr lnr-download" download />

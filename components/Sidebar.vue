@@ -13,7 +13,10 @@
             <span />
           </div>
         </a>
-        <h2>Petousis Menelaos</h2>
+
+        <n-link to="/">
+          <img width="48" height="30" src="/icon.svg" alt="profile-pic">
+        </n-link>
       </div>
       <!--Main Header-->
       <div class="header-main">
@@ -33,7 +36,7 @@
                 <li>
                   <n-link exact-active-class="active" to="/" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
-                      <i class="lnr lnr-home" />
+                      <font-awesome-icon icon="home" />
                     </span>
                     <span>Home</span>
                   </n-link>
@@ -41,7 +44,7 @@
                 <li>
                   <n-link exact-active-class="active" to="/about" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
-                      <i class="lnr lnr-user" />
+                      <font-awesome-icon icon="user" />
                     </span>
                     <span>About Me</span>
                   </n-link>
@@ -49,7 +52,7 @@
                 <li>
                   <n-link exact-active-class="active" to="/resume" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
-                      <i class="lnr lnr-license" />
+                      <font-awesome-icon icon="scroll" />
                     </span>
                     <span>Resume</span>
                   </n-link>
@@ -57,7 +60,7 @@
                 <!-- <li>
                   <n-link exact-active-class="active" to="/portfolio" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
-                      <i class="lnr lnr-briefcase" />
+                     <font-awesome-icon icon="home" />
                     </span>
                     Portfolio
                   </n-link>
@@ -65,7 +68,7 @@
                 <li>
                   <n-link exact-active-class="active" to="/contact" @click.native="toggleMenu">
                     <span class="nav-menu-icon">
-                      <i class="lnr lnr-envelope" />
+                      <font-awesome-icon icon="envelope" />
                     </span>
                     <span>Contact</span>
                   </n-link>
@@ -98,7 +101,7 @@ export default {
       this.toggleClass(burgerEl, burgerElClassName)
     },
     toggleClass(el, className) {
-      if (!el || !el.classList) { return }
+      if (!el?.classList) { return }
       if (el.classList.contains(className)) {
         el.classList.remove(className)
       } else {
@@ -137,7 +140,6 @@ $bg: #2a2b30;
     color: #fff;
     font-size: 20px;
     padding: 10px 0;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     white-space: nowrap;
     z-index: 1;
     background-color: $main-color;
@@ -199,7 +201,8 @@ header .header-mobile {
   left: 0;
   height: $header-mobile-height;
   width: 100%;
-  background-color: $bg;
+  background-color: $bg-color;
+  box-shadow: 0 1px 5px 0px #cccccc;
   z-index: 1;
   display: none;
   -webkit-transition: all .3s ease-in-out;
@@ -210,19 +213,16 @@ header .header-mobile {
       cursor: pointer;
       width: 50px;
       height: 100%;
-      border-left: 1px solid #3b3c43;
       float: right;
   }
-  h2 {
+  img {
       position: absolute;
       left: 50%;
+      top: 10px;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
-      color: #fff;
-      font-size: 14px;
-      line-height: 50px;
-      white-space: nowrap;
+      height: 30px;
   }
 }
 

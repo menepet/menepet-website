@@ -1,7 +1,9 @@
 <template>
   <div class="page-heading">
     <h1>{{ param.title }}</h1>
-    <span class="icon"><i class="lnr" :class="param.icon" /></span>
+    <span class="icon">
+      <font-awesome-icon :icon="param.icon" />
+    </span>
   </div>
 </template>
 
@@ -25,7 +27,7 @@ export default {
     justify-content: space-between;
     height: 100%;
 
-    &> h1 {
+    h1 {
         color: $main-color;
         font-size: 36px;
         font-weight: 700;
@@ -37,7 +39,7 @@ export default {
           margin: 0;
         }
     }
-    &> .icon {
+    .icon {
         color: $main-color;
         font-size: 38px;
         line-height: 1em;

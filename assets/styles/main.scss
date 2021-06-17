@@ -39,6 +39,7 @@ ul {
     margin-right: 15px;
     padding-bottom: 2px;
     color: $font-color;
+
     &:after {
         content: ':';
         position: absolute;
@@ -46,18 +47,19 @@ ul {
     }
 }
 
-.btn-outline-info {
+.btn-outline-info:not(:disabled):not(.disabled) {
     color: $main-color;
     border-color: $main-color;
-    &:hover {
+    &:hover,
+    &:active {
       color: #fff;
       background-color: $main-color;
       border-color: $main-color;
-    }
-    &:focus {
-        box-shadow: 0 0 0 0.2rem $main-color;
+      box-shadow: 0 0 0 0.2rem $main-color;
     }
 }
+
+.form-control { font-size: initial; }
 
 body::-webkit-scrollbar {
     width: 14px;
