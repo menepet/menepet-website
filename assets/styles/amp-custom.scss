@@ -20,7 +20,7 @@ header.header-mobile {
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   amp-img { margin: 20% auto 0; }
 
@@ -48,8 +48,8 @@ header.header-mobile {
   }
 
   #typewriter {
-      font-size: 1.2em;
-      margin-left: 2vw;
+    font-size: 1.2em;
+    margin-left: 2vw;
     &:after{
         content: "|";
     }
@@ -57,6 +57,8 @@ header.header-mobile {
 
   .type-label {
     position: relative;
+    margin: auto;
+
     a {
       color: $bg-color;
       &:before {

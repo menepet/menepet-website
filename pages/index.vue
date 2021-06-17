@@ -24,7 +24,7 @@ export default {
         content: 'My Personal Website as a Developer. Here you can check my Resume'
       }],
       link: [
-        { rel: 'amphtml', href: `${process.env.BASE_URL || ''}/amp` }
+        { rel: 'amphtml', href: `${process.env.BASE_URL || ''}/amp/` }
       ]
     }
   }
