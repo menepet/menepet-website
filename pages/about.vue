@@ -102,9 +102,7 @@ import skills from '~/static/mock/skills.json'
 
 export default {
   name: 'AboutPage',
-  components: {
-    PageHeader
-  },
+  components: { PageHeader },
   data() {
     return {
       skills,

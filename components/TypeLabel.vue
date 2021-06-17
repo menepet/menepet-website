@@ -1,5 +1,5 @@
 <template>
-  <div class="text-left">
+  <div class="text-left type-label">
     <pre id="typewriter" @click="goToAbout">
       <span class="var-highlight">const</span> menePet = {
             name: <span class="string-highlight">'Petousis Menelaos'</span>,
@@ -11,6 +11,7 @@
       };
       <span class="comment">// After initialization, click </span><span class="link">here</span>
     </pre>
+    <a v-if="$isAMP" href="/about">about menepet Petousis Menelaos link</a>
   </div>
 </template>
 
@@ -152,7 +153,6 @@ export default {
 @media screen and (max-width: 767px) {
     #typewriter {
         font-size: 1em;
-        width: 350px;
         width: 98vw;
         margin-left: 2vw;
         height: 250px;

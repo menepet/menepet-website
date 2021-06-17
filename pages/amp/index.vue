@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <img class="icon" src="~/static/icon.svg" width="300" height="187" alt="home logo">
+  <div class="wrapper">
+    <amp-img
+      alt="home logo"
+      src="/icon.svg"
+      width="180"
+      height="187"
+      layout="fixed"
+    />
+
     <type-label />
   </div>
 </template>
@@ -9,13 +16,15 @@
 import TypeLabel from '~/components/TypeLabel.vue'
 
 export default {
+  name: 'AmpHome',
+  layout: 'default.amp',
   components: { TypeLabel },
   head() {
     return {
       title: 'Petousis Menelaos | Front-End Developer',
       meta: [{
         name: 'og:title',
-        content: 'About | Petousis Menelaos'
+        content: 'Menepet | Software Developer Engineer'
       }, {
         name: 'description',
         content: 'My Personal Website as a Developer. Here you can check my Resume'
@@ -24,34 +33,9 @@ export default {
         content: 'My Personal Website as a Developer. Here you can check my Resume'
       }],
       link: [
-        { rel: 'amphtml', href: `${process.env.BASE_URL || ''}/amp` }
+        { rel: 'canonical', href: `${process.env.BASE_URL || ''}/` }
       ]
     }
   }
 }
 </script>
-
-<style scoped>
-.icon {
-  animation: 1s appear;
-  width: 300px;
-  margin: 5% auto;
-  display: block;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 767px) {
-    .icon {
-      width: 180px;
-      margin: 10% auto;
-    }
-}
-</style>

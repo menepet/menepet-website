@@ -1,6 +1,6 @@
 {
   "name": "menepet-website",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "My Personal Resume Website",
   "author": "Petousis Menelaos <menepet@gmail.com>",
   "private": true,
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@nuxtjs/amp": "^0.5.4",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/pwa": "^3.0.2",

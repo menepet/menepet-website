@@ -7,7 +7,7 @@ export default {
   head: {
     title: 'Petousis Menelaos | Software Developer Engineer',
     meta: [
-      { charset: 'utf-8' },
+      { hid: 'charset', charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'keywords',
@@ -20,15 +20,12 @@ export default {
         name: 'google-site-verification',
         content: '9sEWsJkZcwBqggjqv64dtaxGbzGJbMXzqov0MLM0F34'
       }, {
-        vmid: 'og:title',
         name: 'og:title',
         content: 'About | Petousis Menelaos'
       }, {
-        vmid: 'description',
         name: 'description',
         content: 'Petousis Menelaos | Personal site with my Resume!'
       }, {
-        vmid: 'og:description',
         name: 'og:description',
         content: 'Petousis Menelaos | Personal site with my Resume!'
       }
@@ -76,6 +73,7 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/google-analytics',
     '@nuxtjs/sitemap',
+    '@nuxtjs/amp',
     'nuxt-fontawesome'
   ],
 
@@ -91,6 +89,13 @@ export default {
         icons: ['faHome', 'faUser', 'faScroll', 'faEnvelope', 'faEye']
       }
     ]
+  },
+
+  /**
+   * https://github.com/nuxt-community/amp-module/
+   */
+  amp: {
+    css: '~/assets/styles/amp-custom.scss'
   },
 
   /**
