@@ -1,12 +1,35 @@
 [[headers]]
+  for = "*.js"
+  [headers.values]
+    cache-control = "public, max-age=604800, must-revalidate" # one week
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    cache-control = "public, max-age=604800, must-revalidate" # one week
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    cache-control = "public, max-age=604800, must-revalidate" # one week
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    cache-control = "public, max-age=604800, must-revalidate" # one week
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    cache-control = "public, max-age=604800, must-revalidate" # one week
+
+[[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
 
   [headers.values]
-
     # Multi-value headers are expressed with multi-line strings.
     # One Week cache control
-	cache-control = "public, max-age=86200, must-revalidate" # for 24 hours
   X-Frame-Options = "DENY"
   X-XSS-Protection = "1; mode=block"
   Referrer-Policy = "no-referrer"
