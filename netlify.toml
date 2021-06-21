@@ -35,6 +35,7 @@
   [headers.values]
     # Multi-value headers are expressed with multi-line strings.
     # One Week cache control
+  cache-control = "public, max-age=86400, must-revalidate" # one week
   X-Frame-Options = "DENY"
   X-XSS-Protection = "1; mode=block"
   Referrer-Policy = "no-referrer"
