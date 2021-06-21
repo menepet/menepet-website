@@ -1,11 +1,21 @@
 $main-color: #668fab;
 $bg-color: #f4f4f4;
+$dark-color: #202226;
 $font-color: #585858;
+$bg: #2a2b30;
+
+@import '~/assets/styles/nav-icon.scss';
+
+@font-face {
+  font-family: "DroidSans";
+  src: url("/fonts/droid-sans/DroidSans.ttf");
+}
 
 body {
   background-color: $bg-color;
   color: $font-color;
   word-spacing: 1px;
+  font-family: "DroidSans", serif, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 header.header-mobile {
@@ -16,6 +26,70 @@ header.header-mobile {
   width: 100%;
   background-color: $bg-color;
   box-shadow: 0 1px 5px 0px #cccccc;
+
+  .w-50 {
+    width: 50px;
+  }
+  #nav-icon {
+    top: -50%;
+    border: none;
+  }
+}
+
+#sidebar {
+  width: 200px;
+  background-color: $bg;
+  text-align: center;
+  border-right: 1px solid $dark-color;
+
+  .sidebar-top {
+    position: relative;
+
+    h1 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: #fff;
+      font-size: 20px;
+      padding: 10px 0;
+      white-space: nowrap;
+      background-color: $main-color;
+      margin: 0;
+    }
+  }
+  nav.nav-menu {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid $dark-color;
+        text-align: left;
+
+        a {
+          position: relative;
+          display: flex;
+          align-items: center;
+          color: white;
+          text-decoration: underline;
+          line-height: 60px;
+          padding-left: 40px;
+          text-decoration: none;
+
+          svg {
+            width: 22px;
+            height: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .wrapper {

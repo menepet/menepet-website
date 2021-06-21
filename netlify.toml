@@ -24,6 +24,11 @@
     cache-control = "public, max-age=604800, must-revalidate" # one week
 
 [[headers]]
+  for = "*.ttf"
+  [headers.values]
+    cache-control = "public, max-age=31536000, must-revalidate" # max value
+
+[[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
 

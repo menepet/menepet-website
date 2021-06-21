@@ -12,10 +12,10 @@ export default {
   components: { TypeLabel },
   head() {
     return {
-      title: 'Petousis Menelaos | Front-End Developer',
+      title: 'Petousis Menelaos | Software Developer Engineer',
       meta: [{
         name: 'og:title',
-        content: 'About | Petousis Menelaos'
+        content: 'Petousis Menelaos | Software Developer Engineer'
       }, {
         name: 'description',
         content: 'My Personal Website as a Developer. Here you can check my Resume'

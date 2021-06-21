@@ -1,6 +1,7 @@
 <template>
   <div class="page-heading">
     <h1>{{ param.title }}</h1>
+
     <span class="icon">
       <font-awesome-icon :icon="param.icon" />
     </span>

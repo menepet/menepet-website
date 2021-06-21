@@ -9,6 +9,7 @@
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
+        netlify
       >
         <div class="messages" />
         <div class="controls">

@@ -21,7 +21,7 @@ export default {
   components: { TypeLabel },
   head() {
     return {
-      title: 'Petousis Menelaos | Front-End Developer',
+      title: 'Petousis Menelaos | Software Developer Engineer',
       meta: [{
         name: 'og:title',
         content: 'Menepet | Software Developer Engineer'
