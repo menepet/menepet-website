@@ -141,6 +141,10 @@ export default {
   },
   sitemap: {
     hostname: 'https://menepet.me',
+    defaults: {
+      priority: 1,
+      lastmod: new Date()
+    },
     gzip: true,
     exclude: [
       '/portfolio'
