@@ -3,9 +3,13 @@
     <b-container>
       <page-header :param="{ title: 'My Resume', icon: 'scroll' }" />
 
-      <span class="icon"><i class="lnr lnr-printer" @click="print" /></span>
       <span class="icon">
-        <a href="/docs/Petousis_Menelaos_CV.pdf" target="_blank" class="lnr lnr-download" download />
+        <font-awesome-icon icon="print" title="Print the whole CV 🖨️" @click="print" />
+      </span>
+      <span class="icon">
+        <a href="/docs/Petousis_Menelaos_CV.pdf" target="_blank" download>
+          <font-awesome-icon icon="file-download" title="Download CV pdf 🗂️" />
+        </a>
       </span>
 
       <resume-list title="EXPERIENCE" :list="experience" />
@@ -42,8 +46,8 @@ export default {
           location: 'Athens University of Economics and Busines (AUEB)',
           descr: `Undergraduate student at the Athens University of Economics
             and Business, with a lot of volunteer work in the technical field
-            and courses such as: Artificial Intelligence, Compilers, Computer Networking,
-            Digital Systems Design, Distributed Systems`,
+            and courses such as: AI, Compilers, Computer Networking,
+            Distributed Systems`,
           from: '2010',
           to: '2016'
         }
@@ -86,7 +90,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .icon i.lnr, .icon a {
+  .icon svg, .icon a {
     color: $main-color;
     font-size: 22px;
     cursor: pointer;

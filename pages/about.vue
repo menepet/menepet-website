@@ -58,7 +58,7 @@
               </a>
             </li>
             <li>
-              <span class="title-underline">Freelance</span><span class="value">Available</span>
+              <span class="title-underline">Freelance</span><span class="value">yeap</span>
             </li>
           </ul>
           <div class="d-none d-lg-block">
@@ -148,7 +148,7 @@ ul li {
 
 .email-display {
   cursor: pointer;
-  opacity: .7;
+  opacity: .6;
   &:hover { opacity: 1; }
 }
 

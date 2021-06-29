@@ -32,7 +32,7 @@
   {
     "title": "Front End Developer",
     "location": "MPASS Ltd, Athens",
-    "descr": "Web Developer with emphasis on the Front-end. At first I was doing fullstack work, but along the way I used different Front-end tools like VueJs/Nuxt, EmberJs, MeteorJs, GoJs, BackBoneJS, Apache Cordova and more. Check my project list below for more ...",
+    "descr": "Web Developer with emphasis on the Front-end. At first I was doing fullstack work, but along the way I tried different Front-end tools like VueJs/Nuxt, EmberJs, MeteorJs, GoJs, BackBoneJS, Apache Cordova and more.",
     "from": "Oct. 2016",
     "to": "Dec. 2019",
     "projects": [
@@ -73,8 +73,8 @@
         "technologies": ["MeteorJs"],
         "link": ""
       }, {
-        "title": "Athens International Airport Information | Passenger kiosk for Athens Airport",
-        "descr": "Information on flights according to the passenger\"s boarding pass, shopping stores and in-app search information.",
+        "title": "Athens International Airport Information & Passenger kiosk for Athens Airport",
+        "descr": "Information on flights according to the passenger's boarding pass, shopping stores and in-app search information.",
         "customer": "Athens International Airport",
         "technologies": ["EmberJs"],
         "link": ""
@@ -90,12 +90,6 @@
         "customer": "Athenian Brewery",
         "technologies": ["RequireJs"],
         "link": ""
-      }, {
-        "title": "Truce Game App",
-        "descr": "Developed for the International Olympic Truce Center, the mobile application “Truce Game”, an interactive quiz. Athletes at the Nanjing. Youth Olympics, visited the IOTC booth, interacted with enthusiasm, and learned information about the history of the Olympic Truce.",
-        "customer": "IOTC, Samsung",
-        "technologies": ["Android"],
-        "link": "https://www.mpass.gr/projects/truce-game-app"
       }, {
         "title": "ExplorIoT Android App",
         "descr": "Combined with the Company\"s BLE Sensors (Lux sensor) for the “ExplotIoT” campaign at the Mobile World Congress 2016 International Exhibition in Barcelona",

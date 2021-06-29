@@ -55,9 +55,11 @@ ul {
   border: $main-color 1px dotted;
   border-radius: 15px;
   padding: 25px;
+
   &> li {
     margin: 20px 0;
     font-family: "Droid Sans";
+
     .dot {
       color: $main-color;
       font-size: 20px;
@@ -69,6 +71,7 @@ ul {
       padding: 3px 6px;
       margin-right: 7px;
       word-break: break-word;
+      line-height: 1.8;
     }
     a {
       color: $main-color;
