@@ -61,12 +61,6 @@
         "technologies": ["BackBoneJS"],
         "link": "https://www.ert.gr/radiotileorasi/poiotita-zois-radiotileorasi/nea-efarmogi-smart-tv-gia-tin-ert/"
       }, {
-        "title": "Pameodeon Smart TV App",
-        "descr": "The PameOdeon app is the first VoD streaming service in Greece for Smart TV 2011-2013 platforms. It is implemented and supported  Samsung Smart TV offering a complete home entertainment experience, by providing viewers with Hollywood and Greek favorite black and white films in high resolution. Movies are grouped by several categories such as genre, production country, etc.",
-        "customer": "Pameodeon",
-        "technologies": ["VanillaJs"],
-        "link": "https://www.samsung.com/gr/discover/tv-audio/pameodeon-video-on-demand/"
-      }, {
         "title": "VTB Russia Bank Live Chat widget integration and Admin Panel",
         "descr": "Implement an addon widget for any site, along with the management track, which included ready answers, sending emails for actions, and assigning conversations by category",
         "customer": "VTB Group",
@@ -84,12 +78,6 @@
         "customer": "AB Vassilopoulos",
         "technologies": ["VueJs"],
         "link": "https://www2.ab.gr/games/"
-      }, {
-        "title": "Web & Android App for Greek Brewers customers",
-        "descr": "Information panel for suppliers of EZ about the status of their orders",
-        "customer": "Athenian Brewery",
-        "technologies": ["RequireJs"],
-        "link": ""
       }, {
         "title": "ExplorIoT Android App",
         "descr": "Combined with the Company\"s BLE Sensors (Lux sensor) for the “ExplotIoT” campaign at the Mobile World Congress 2016 International Exhibition in Barcelona",
