@@ -1,5 +1,12 @@
 [
   {
+    "title": "Senior Software Engineer",
+    "location": "Workable, Athens",
+    "descr": "Enriching the existing React UI lib.",
+    "from": "Sept. 2021",
+    "to": "now",
+    "projects": []
+  }, {
     "title": "Software Engineer",
     "location": "Wind Hellas, Athens",
     "descr": "Working as Front-end Developer & trying new technologies such as PWA, AMP & Web Components.",
@@ -28,8 +35,7 @@
         "link": "https://www.wind.gr/support/idiotes/"
       }
     ]
-  },
-  {
+  }, {
     "title": "Front End Developer",
     "location": "MPASS Ltd, Athens",
     "descr": "Web Developer with emphasis on the Front-end. At first I was doing fullstack work, but along the way I tried different Front-end tools like VueJs/Nuxt, EmberJs, MeteorJs, GoJs, BackBoneJS, Apache Cordova and more.",
@@ -86,8 +92,7 @@
         "link": "https://www.mpass.gr/content/explorit"
       }
     ]
-  },
-  {
+  }, {
     "title": "Android Developer",
     "location": "Cosmote / OTE Hellas, Athens",
     "descr": "Thesis on the \"subject\": Indoor Navigation through Beacons Bluetooth Low Energy (BLE) technologies. Additionally, an app has been implemented and for people without the sense of vision.",
