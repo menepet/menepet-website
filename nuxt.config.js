@@ -147,14 +147,14 @@ export default {
     ]
   },
   sitemap: {
-    hostname: 'https://menepet.me',
+    hostname: process.env.BASE_URL,
     defaults: {
-      priority: 1,
       lastmod: new Date()
     },
     gzip: true,
     exclude: [
-      '/portfolio'
+      '/portfolio',
+      '/redirect'
     ],
     routes: [
       '/index',
