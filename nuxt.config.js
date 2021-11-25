@@ -153,8 +153,7 @@ export default {
     },
     gzip: true,
     exclude: [
-      '/portfolio',
-      '/redirect'
+      '/portfolio'
     ],
     routes: [
       '/index',
