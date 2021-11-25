@@ -42,7 +42,7 @@
     cache-control = "public, max-age=31536000, must-revalidate" # max value
 
 [[redirects]]
-  from = "https://menepet.me/new"
+  from = "https://www.menepet.me/new"
   to = "https://mene.pet"
-  status = 200
+  status = 302
   force = true
