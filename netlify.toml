@@ -40,3 +40,9 @@
   for = "*.ttf"
   [headers.values]
     cache-control = "public, max-age=31536000, must-revalidate" # max value
+
+[[redirects]]
+  from = "https://menepet.me/new"
+  to = "https://mene.pet"
+  status = 200
+  force = true
