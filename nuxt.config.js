@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Petousis Menelaos | Software Developer Engineer',
+    titleTemplate: '%s - Petousis Menelaos (menepet)',
     meta: [
       { hid: 'charset', charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,12 +20,19 @@ export default {
         name: 'google-site-verification',
         content: '9sEWsJkZcwBqggjqv64dtaxGbzGJbMXzqov0MLM0F34'
       }, {
-        name: 'og:title',
-        content: 'About | Petousis Menelaos'
+        hid: 'title',
+        name: 'title',
+        content: 'Petousis Menelaos'
       }, {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Petousis Menelaos'
+      }, {
+        hid: 'description',
         name: 'description',
         content: 'Petousis Menelaos | Personal site with my Resume!'
       }, {
+        hid: 'og:description',
         name: 'og:description',
         content: 'Petousis Menelaos | Personal site with my Resume!'
       }

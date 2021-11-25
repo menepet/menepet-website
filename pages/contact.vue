@@ -108,6 +108,7 @@
 
 <script>
 import PageHeader from '~/components/PageHeader'
+import { metaHead } from '~/utils'
 
 export default {
   name: 'Contact',
@@ -116,19 +117,7 @@ export default {
   },
   head() {
     return {
-      title: 'Contact | Petousis Menelaos',
-      meta: [{
-        name: 'og:title',
-        content: 'Contact | Petousis Menelaos'
-      }, {
-        vmid: 'description',
-        name: 'description',
-        content: 'Feel free to contact me here!'
-      }, {
-        vmid: 'og:description',
-        name: 'og:description',
-        content: 'Feel free to contact me here!'
-      }],
+      ...metaHead('Contact 📨', 'Feel free to contact me here!'),
       script: [
         { src: 'https://platform.linkedin.com/badges/js/profile.js' }
       ],

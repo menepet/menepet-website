@@ -7,22 +7,13 @@
 
 <script>
 import TypeLabel from '~/components/TypeLabel.vue'
+import { metaHead } from '~/utils'
 
 export default {
   components: { TypeLabel },
   head() {
     return {
-      title: 'Petousis Menelaos | Software Developer Engineer',
-      meta: [{
-        name: 'og:title',
-        content: 'Petousis Menelaos | Software Developer Engineer'
-      }, {
-        name: 'description',
-        content: 'My Personal Website as a Developer. Here you can check my Resume'
-      }, {
-        name: 'og:description',
-        content: 'My Personal Website as a Developer. Here you can check my Resume'
-      }],
+      ...metaHead('Home 🏠', 'My Personal Website as a Software Engineer. Check my Resume :)'),
       link: [
         { rel: 'amphtml', href: `${process.env.BASE_URL || ''}/amp/` }
       ]

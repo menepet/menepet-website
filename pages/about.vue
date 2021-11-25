@@ -9,14 +9,14 @@
             Software Developer Engineer
           </h3>
 
-          <p>Hi There, I’m Menelaos from Athens, Greece and glad to see you here! </p>
+          <p>Hi There, I’m Menelaos from Athens, Greece and I'm glad to see you here!</p>
           <p>With a Bachelor’s degree in Computer Science and hands-on experience using vanilla JavaScript
             to create and implement software applications, I've been working since 2015 as a professional
-            Web Software Engineer and I'm focused on Front End.
+            Web Software Engineer and I'm focused more on front-end technologies.
           </p>
           <p>My motivation is to be challenged with projects that require me to work outside
             my comfort and knowledge set, as continuing to learn new Js frameworks and development
-            techniques/architectures, are important to me. In my free time I like to deal with music and martial arts.
+            techniques & architectures, are important to me. In my free time I like to deal with music and martial arts.
             Feel free to continue in the Resume section 🎉
           </p>
         </b-col>
@@ -99,6 +99,7 @@
 <script>
 import PageHeader from '~/components/PageHeader'
 import skills from '~/static/mock/skills.json'
+import { metaHead } from '~/utils'
 
 export default {
   name: 'AboutPage',
@@ -118,19 +119,7 @@ export default {
   },
   head() {
     return {
-      title: 'About | Petousis Menelaos',
-      meta: [{
-        name: 'og:title',
-        content: 'About | Petousis Menelaos'
-      }, {
-        vmid: 'description',
-        name: 'description',
-        content: 'Learn more about my experience as a dev!'
-      }, {
-        vmid: 'og:description',
-        name: 'og:description',
-        content: 'Learn more about my experience as a dev!'
-      }]
+      ...metaHead('About Me 🧑‍💻', 'Learn more about my experience as a dev!')
     }
   }
 }

@@ -26,10 +26,11 @@
 </template>
 
 <script>
+import experience from '~/static/mock/resume.json'
 import { EventBus } from '~/plugins/event-bus.js'
 import PageHeader from '~/components/PageHeader'
 import ResumeList from '~/components/ResumeList'
-import experience from '~/static/mock/resume.json'
+import { metaHead } from '~/utils'
 
 export default {
   name: 'AboutPage',
@@ -72,18 +73,7 @@ export default {
   },
   head() {
     return {
-      title: 'My Resume | Petousis Menelaos',
-      meta: [{
-        name: 'og:title',
-        content: 'My Resume | Petousis Menelaos'
-      }, {
-        vmid: 'description',
-        name: 'description',
-        content: 'Petousis Menelaos Resume and professional experience'
-      }, {
-        name: 'og:description',
-        content: 'Petousis Menelaos Resume and professional experience'
-      }]
+      ...metaHead('My Resume 📜', 'Petousis Menelaos CV and professional experience')
     }
   }
 }
