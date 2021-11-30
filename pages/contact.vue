@@ -112,6 +112,7 @@ import { metaHead } from '~/utils'
 
 export default {
   name: 'Contact',
+  amp: false,
   components: {
     PageHeader
   },
