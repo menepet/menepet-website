@@ -1,4 +1,3 @@
-
 export default {
   target: 'static',
   /*
@@ -99,18 +98,12 @@ export default {
   },
 
   /**
-   * https://github.com/nuxt-community/amp-module/
-   */
-  amp: {
-    css: '~/assets/styles/amp-custom.scss'
-  },
-
-  /**
    * Sass file import
    */
   styleResources: {
     scss: ['assets/styles/main.scss']
   },
+
   pwa: {
     manifest: {
       name: 'Petousis Menelaos | Personal Website',
@@ -141,11 +134,24 @@ export default {
       ]
     }
   },
+
   generate: {
     exclude: [
       /^(?=.*\portfolio\b).*$/
     ]
   },
+
+  /**
+   * https://github.com/nuxt-community/amp-module/
+   */
+  amp: {
+    css: '~/assets/styles/amp-custom.scss',
+    routeAliases: ['/index', '/']
+  },
+
+  /**
+   * Sitemap
+   */
   sitemap: {
     hostname: process.env.BASE_URL,
     defaults: {
@@ -162,6 +168,7 @@ export default {
       '/resume'
     ]
   },
+
   /*
   ** Build configuration
   */
@@ -193,7 +200,6 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-    }
+    extend(config, ctx) {}
   }
 }
