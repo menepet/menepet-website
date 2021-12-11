@@ -1,3 +1,7 @@
+import fs from 'fs'
+const packageJson = fs.readFileSync('./package.json')
+const version = JSON.parse(packageJson).version || 0
+
 export default {
   target: 'static',
   /*
@@ -7,6 +11,7 @@ export default {
     titleTemplate: '%s - Petousis Menelaos (menepet)',
     meta: [
       { hid: 'charset', charset: 'utf-8' },
+      { name: 'appVersion', content: version },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'keywords',
