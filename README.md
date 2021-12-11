@@ -6,4 +6,4 @@
 
 Hi There, I’m Menelaos from Athens, Greece 👋
 
-🚀 If you want to learn more about my interesting character 😎 & employment 💻 do not hesitate to enter and scan my [personal website](https://menepet.me/)!
+🚀 If you want to learn more about my interesting character 😎 & employment 💻 do not hesitate to enter and scan my [personal website](https://mene.pet/)!
