@@ -102,6 +102,18 @@
           </div>
         </div>
       </form>
+
+      <a href="https://github.com/menepet/menepet-website" target="_blank" rel="noopener">
+        <img
+          loading="lazy"
+          width="70"
+          height="70"
+          src="/images/forkme_right_white_ffffff.png?resize=70%2C70"
+          class="fork-me"
+          alt="Fork me on GitHub"
+          data-recalc-dims="1"
+        >
+      </a>
     </b-container>
   </div>
 </template>
@@ -140,11 +152,20 @@ input, textarea {
   bottom: 10px;
   opacity: 0.7;
 }
+.fork-me {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 @media screen and (min-width: 767px) {
   .footnote { display: block; }
   .LI-profile-badge {
     float: right;
+  }
+  .fork-me {
+    width: 140px;
+    height: 140px;
   }
 }
 </style>
