@@ -84,7 +84,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'UA-155164825-1'
+    id: process.env.GA_ID || ''
   },
 
   // https://github.com/vaso2/nuxt-fontawesome
