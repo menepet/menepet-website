@@ -9,7 +9,8 @@
             Software Developer Engineer
           </h3>
 
-          <p>Hi There, I’m Menelaos from Athens, Greece and I'm glad to see you here!</p>
+          <p>Hi There 👋</p>
+          <p>I’m Menelaos from Athens, Greece and I'm glad to see you here!</p>
           <p>With a Bachelor’s degree in Computer Science and hands-on experience using vanilla JavaScript
             to create and implement software applications, I've been working since 2015 as a professional
             Web Software Engineer and I'm focused more on front-end technologies.
@@ -18,6 +19,9 @@
             my comfort and knowledge set, as continuing to learn new Js frameworks and development
             techniques & architectures, are important to me. In my free time I like to deal with music and martial arts.
             Feel free to continue in the Resume section 🎉
+          </p>
+          <p>
+            ⚡ Fun fact: I love puns
           </p>
         </b-col>
         <b-col offset-lg="2" lg="4">
