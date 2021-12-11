@@ -7,7 +7,7 @@
             location: <span class="string-highlight">'Athens, Greece'</span>,
             skills: [<span class="string-highlight">'JS &#x214B; Vue &#x214B; React</span>,
                   <span class="string-highlight">'SEO Experience'</span>,
-                  <span class="string-highlight">'UX Enthusiast'</span>];
+                  <span class="string-highlight">'UX Enthusiast'</span>]
       });
       <span class="comment">// After initialization, click </span><span class="link">here</span>
     </pre>
