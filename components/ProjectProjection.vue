@@ -58,7 +58,7 @@ ul {
 
   &> li {
     margin: 20px 0;
-    font-family: "Droid Sans";
+    font-family: $font-droid-regular;
 
     .dot {
       color: $main-color;

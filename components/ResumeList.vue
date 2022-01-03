@@ -56,7 +56,7 @@ h2 {
     font-size: 20px;
 }
 ul.experience {
-    font-family: "Droid Sans";
+    font-family: $font-droid-regular;
     margin: 20px 0 50px;
     list-style: none;
     position: relative;
@@ -73,7 +73,7 @@ ul.experience {
         article {
             padding: 0 7%;
             h4 {
-                font-family: "Droid Sans Bold";
+                font-family: $font-droid-bold;
                 font-size: 16px;
                 font-weight: 700;
                 letter-spacing: .5px;
@@ -85,7 +85,7 @@ ul.experience {
                 margin: 5px 0;
                 font-size: 12px;
                 text-transform: uppercase;
-                font-family: "Droid Sans Bold";
+                font-family: $font-droid-bold;
                 color: $main-color;
             }
         }
@@ -95,12 +95,12 @@ ul.experience {
             top: 0;
             position: absolute;
             span {
-                font-size: 15px;
+                font-size: 14px;
                 position: absolute;
                 -webkit-transform: translateX(-140%);
                 -ms-transform: translateX(-140%);
                 transform: translateX(-140%);
-                color: #222;
+                color: $font-color;
                 &.to {
                   top: -18px;
                 }

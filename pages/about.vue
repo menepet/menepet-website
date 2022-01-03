@@ -132,7 +132,7 @@ export default {
 
 <style lang="scss" scoped>
 ul li {
-    font-family: "Droid Sans";
+    font-family: $font-droid-regular;
     line-height: 1em;
     margin-bottom: 13px;
     a {

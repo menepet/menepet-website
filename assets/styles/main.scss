@@ -5,102 +5,113 @@ $main-color: #668fab;
 $bg-color: #f4f4f4;
 $font-color: #585858;
 
+$font-droid-bold: "Droid Sans Bold";
+$font-droid-regular: "Droid Sans";
+
 h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-family: "Droid Sans Bold";
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: $font-droid-bold;
 }
 
 h2 {
-    font-family: "Droid Sans Bold";
-    color: $font-color;
+  font-family: $font-droid-bold;
+  color: $font-color;
 }
 
 p {
-    font-family: "Droid Sans";
-    color: $font-color;
+  font-family: $font-droid-regular;
+  color: $font-color;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .title-underline {
-    font-family: "Droid Sans Bold";
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: .5px;
-    border-bottom: 2px solid $main-color;
-    position: relative;
-    display: inline-block;
-    margin-right: 15px;
-    padding-bottom: 2px;
-    color: $font-color;
+  font-family: $font-droid-bold;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid $main-color;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  padding-bottom: 2px;
+  color: $font-color;
 
-    &:after {
-        content: ':';
-        position: absolute;
-        right: -10px;
-    }
+  &:after {
+    content: ":";
+    position: absolute;
+    right: -10px;
+  }
 }
 
 .btn-outline-info:not(:disabled):not(.disabled) {
-    color: $main-color;
+  color: $main-color;
+  border-color: $main-color;
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: $main-color;
     border-color: $main-color;
-    &:hover,
-    &:active {
-      color: #fff;
-      background-color: $main-color;
-      border-color: $main-color;
-      box-shadow: 0 0 0 0.2rem $main-color;
-    }
+    box-shadow: 0 0 0 0.2rem $main-color;
+  }
 }
 
-.form-control { font-size: initial; }
+.form-control {
+  font-size: initial;
+}
 
 body::-webkit-scrollbar {
-    width: 14px;
+  width: 14px;
 }
 body {
-    scrollbar-width: thin;
-    scrollbar-color: $main-color $bg-color;
+  scrollbar-width: thin;
+  scrollbar-color: $main-color $bg-color;
 }
 body::-webkit-scrollbar-track {
-    background: $bg-color;
+  background: $bg-color;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: $main-color ;
-    border-radius: 6px;
-    border: 3px solid $bg-color;
+  background-color: $main-color;
+  border-radius: 6px;
+  border: 3px solid $bg-color;
 }
 
 /* Global Page Transition anim */
-.page-enter-active, .page-leave-active {
-    transition: opacity .3s ease-in-out;
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease-in-out;
 }
-.page-enter, .page-leave-active {
-    opacity: .4
-}
-
-@font-face {
-    font-family: "Droid Sans";
-    src: url('~assets/fonts/droid-sans/DroidSans.eot'); /* IE9 Compat Modes */
-    src: local('sans-serif'),
-        url("~assets/fonts/droid-sans/DroidSans.ttf") format("truetype"), /* Safari, Android, iOS */
-        url("~assets/fonts/droid-sans/DroidSans.woff") format("woff"), /* Pretty Modern Browsers */
-        url("~assets/fonts/droid-sans/DroidSans.woff2") format("woff2"); /* Super Modern Browsers */
-    font-display: swap;
+.page-enter,
+.page-leave-active {
+  opacity: 0.4;
 }
 
 @font-face {
-    font-family: "Droid Sans Bold";
-    src: url('~assets/fonts/droid-sans/DroidSans-Bold.eot'); /* IE9 Compat Modes */
-    src: local('sans-serif'),
-        url("~assets/fonts/droid-sans/DroidSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
-        url("~assets/fonts/droid-sans/DroidSans-Bold.woff") format("woff"), /* Pretty Modern Browsers */
-        url("~assets/fonts/droid-sans/DroidSans-Bold.woff2") format("woff2"); /* Super Modern Browsers */
-    font-display: swap;
+  font-family: $font-droid-regular;
+  src: url("~assets/fonts/droid-sans/DroidSans.eot"); /* IE9 Compat Modes */
+  src: local("sans-serif"),
+    url("~assets/fonts/droid-sans/DroidSans.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("~assets/fonts/droid-sans/DroidSans.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("~assets/fonts/droid-sans/DroidSans.woff2")
+      format("woff2"); /* Super Modern Browsers */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-droid-bold;
+  src: url("~assets/fonts/droid-sans/DroidSans-Bold.eot"); /* IE9 Compat Modes */
+  src: local("sans-serif"),
+    url("~assets/fonts/droid-sans/DroidSans-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("~assets/fonts/droid-sans/DroidSans-Bold.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("~assets/fonts/droid-sans/DroidSans-Bold.woff2") format("woff2"); /* Super Modern Browsers */
+  font-display: swap;
 }
