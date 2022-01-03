@@ -26,7 +26,8 @@
 </template>
 
 <script>
-import experience from '~/static/mock/resume.json'
+import experience from '~/static/mock/resume.js'
+import education from '~/static/mock/education.js'
 import { EventBus } from '~/plugins/event-bus.js'
 import PageHeader from '~/components/PageHeader'
 import ResumeList from '~/components/ResumeList'
@@ -42,18 +43,7 @@ export default {
   data() {
     return {
       experience,
-      education: [
-        {
-          title: 'Computer Science degree',
-          location: 'Athens University of Economics and Busines (AUEB)',
-          descr: `Undergraduate student at the Athens University of Economics
-            and Business, with a lot of volunteer work in the technical field
-            and courses such as: AI, Compilers, Computer Networking,
-            Distributed Systems`,
-          from: '2010',
-          to: '2016'
-        }
-      ]
+      education
     }
   },
   mounted() {
@@ -62,6 +52,7 @@ export default {
     }
   },
   beforeDestroy() {
+    window.onafterprint = null
     EventBus.$off()
   },
   methods: {
