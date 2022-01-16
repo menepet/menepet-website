@@ -6,7 +6,7 @@ export default [
       "Enriching the existing React UI lib and improve company's Applicant Tracking System.",
     from: {
       label: 'Sept. 2021',
-      date: new Date('September, 2021')
+      date: new Date('2021-09-01 12:00:00')
     },
     to: {
       label: 'now',
@@ -21,11 +21,11 @@ export default [
       'Working as Front-end Developer & trying new technologies such as PWA, AMP & Web Components.',
     from: {
       label: 'Jan. 2020',
-      date: new Date('January, 2020')
+      date: new Date('2020-01-01 12:00:00')
     },
     to: {
       label: 'Aug. 2021',
-      date: new Date('August, 2021')
+      date: new Date('2021-08-01 12:00:00')
     },
     projects: [
       {
@@ -64,11 +64,11 @@ export default [
       'Web Developer with emphasis on the Front-end. At first I was doing fullstack work, but along the way I tried different Front-end tools like VueJs/Nuxt, EmberJs, MeteorJs, GoJs, BackBoneJS, Apache Cordova and more.',
     from: {
       label: 'Oct. 2016',
-      date: new Date('October, 2016')
+      date: new Date('2016-10-01 12:00:00')
     },
     to: {
       label: 'Dec. 2019',
-      date: new Date('December, 2019')
+      date: new Date('2019-12-01 12:00:00')
     },
     projects: [
       {
@@ -146,11 +146,11 @@ export default [
       'Thesis on the "subject": Indoor Navigation through Beacons Bluetooth Low Energy (BLE) technologies. Additionally, an app has been implemented and for people without the sense of vision.',
     from: {
       label: 'Oct. 2015',
-      date: new Date('October, 2015')
+      date: new Date('2015-10-01 12:00:00')
     },
     to: {
       label: 'Mar. 2016',
-      date: new Date('March, 2016')
+      date: new Date('2016-06-01 12:00:00')
     },
     projects: [
       {
