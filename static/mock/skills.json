@@ -2,31 +2,40 @@
   {
     "skill": "VueJs / NuxtJs",
     "progress": 87
-  }, {
+  },
+  {
     "skill": "React",
     "progress": 70
-  }, {
+  },
+  {
     "skill": "PWA",
     "progress": 73
-  }, {
+  },
+  {
     "skill": "SEO",
-    "progress": 82
-  }, {
+    "progress": 85
+  },
+  {
     "skill": "Web Components / JSX",
     "progress": 55
-  }, {
+  },
+  {
     "skill": "Docker",
     "progress": 61
-  }, {
+  },
+  {
     "skill": "AMP",
     "progress": 55
-  }, {
+  },
+  {
+    "skill": "NodeJs / Express / Koa",
+    "progress": 67
+  },
+  {
     "skill": "EmberJs",
     "progress": 80
-  }, {
-    "skill": "Node Js",
-    "progress": 67
-  }, {
+  },
+  {
     "skill": "Webpack",
     "progress": 64
   }

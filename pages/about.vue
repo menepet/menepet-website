@@ -52,6 +52,12 @@
               <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/menelaospetousis/" class="value">linkedin.com/menelaospetousis</a>
             </li>
             <li>
+              <span class="title-underline">Medium</span>
+              <a target="_blank" rel="noopener" href="https://medium.com/@menepet" class="value">
+                medium.com/@menepet
+              </a>
+            </li>
+            <li>
               <span class="title-underline">Stackoverflow</span>
               <a target="_blank" rel="noopener" href="https://stackoverflow.com/users/3074131/mene" class="value">stackoverflow.com/mene</a>
             </li>

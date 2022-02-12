@@ -88,6 +88,12 @@ export default {
     'nuxt-fontawesome'
   ],
 
+  // https://bootstrap-vue.org/docs#tree-shaking-with-nuxtjs
+  bootstrapVue: {
+    components: ['BContainer', 'BCollapse', 'BRow', 'BCol', 'BButton']
+  },
+
+  // https://google-analytics.nuxtjs.org/
   googleAnalytics: {
     id: process.env.GA_ID || ''
   },
