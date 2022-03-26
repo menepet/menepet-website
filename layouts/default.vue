@@ -17,7 +17,7 @@ export default {
 html, body {
   font-family: Arial, sans-serif, -apple-system, BlinkMacSystemFont;
   background-color: $bg-color;
-  color: $font-color;
+  color: var(--color-secondary);
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

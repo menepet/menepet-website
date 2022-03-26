@@ -112,7 +112,7 @@ ul.experience {
         -webkit-transform: translateX(-140%);
         -ms-transform: translateX(-140%);
         transform: translateX(-140%);
-        color: $font-color;
+        color: var(--color-secondary);
 
         &.to {
           top: -18px;

@@ -69,8 +69,10 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    // https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+    // https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode'
   ],
   /*
   ** Nuxt.js modules
@@ -112,7 +114,10 @@ export default {
    * Sass file import
    */
   styleResources: {
-    scss: ['assets/styles/main.scss']
+    scss: [
+      'assets/styles/variables.scss',
+      'assets/styles/main.scss'
+    ]
   },
 
   pwa: {

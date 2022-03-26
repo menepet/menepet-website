@@ -44,27 +44,3 @@ export const diffDates = (date1, date2) => {
     months: monthsDiff % 12
   }
 }
-
-/**
- * Returns the the OS default theme, if it is dark or not,
- * or returns the `localStorage` `hasDarkTheme` item from localStorage
- * @returns true - false
- */
-export const isDarkTheme = () => {
-  const hasDarkTheme = localStorage.getItem('hasDarkTheme')
-  const hasDefaultDarkMode = window?.matchMedia('(prefers-color-scheme: dark)').matches
-
-  if (['true', 'false'].includes(hasDarkTheme)) {
-    return hasDarkTheme === 'true'
-  } else {
-    return hasDefaultDarkMode
-  }
-}
-
-/**
- * Sets the `localStorage` `hasDarkTheme` item to the localStorage
- * @param {boolean} toDarkTheme - if it's dark theme or not
- */
-export const setDarkTheme = (toDarkTheme = false) => {
-  localStorage.setItem('hasDarkTheme', toDarkTheme)
-}

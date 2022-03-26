@@ -1,10 +1,10 @@
 <template>
   <header>
-    <div id="header-content">
+    <div id="header-content" :class="{on : isOpen}">
       <!--Mobile Header-->
       <div class="header-mobile">
         <a class="header-toggle" @click="toggleMenu">
-          <div id="nav-icon">
+          <div id="nav-icon" :class="{open : isOpen}">
             <span />
             <span />
             <span />
@@ -76,17 +76,8 @@
               </ul>
             </nav>
             <footer class="nav-footer">
-              <b-form-checkbox
-                v-model="isDarkTheme"
-                name="switch theme"
-                aria-label="switch between light or dark theme"
-                switch
-                size="sm"
-                @change="onSwitch"
-              >
-                <font-awesome-icon v-if="isDarkTheme" icon="moon" />
-                <font-awesome-icon v-else icon="sun" />
-              </b-form-checkbox>
+              <theme-switcher />
+
               <div class="copy">
                 <p>&copy; Petousis Menelaos<br>All Right Reserved.</p>
               </div>
@@ -99,38 +90,19 @@
 </template>
 
 <script>
-import { isDarkTheme, setDarkTheme } from '@/utils'
+import themeSwitcher from '~/components/themeSwitcher'
 
 export default {
   name: 'Sidebar',
+  components: { themeSwitcher },
   data() {
     return {
-      isDarkTheme: false
+      isOpen: false
     }
-  },
-  mounted() {
-    this.isDarkTheme = isDarkTheme()
   },
   methods: {
     toggleMenu() {
-      const navEl = document.getElementById('header-content')
-      const navElClassName = 'on'
-      const burgerEl = document.getElementById('nav-icon')
-      const burgerElClassName = 'open'
-
-      this.toggleClass(navEl, navElClassName)
-      this.toggleClass(burgerEl, burgerElClassName)
-    },
-    toggleClass(el, className) {
-      if (!el?.classList) { return }
-      if (el.classList.contains(className)) {
-        el.classList.remove(className)
-      } else {
-        el.classList.add(className)
-      }
-    },
-    onSwitch() {
-      setDarkTheme(this.isDarkTheme)
+      this.isOpen = !this.isOpen
     }
   }
 }
