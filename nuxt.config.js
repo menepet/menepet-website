@@ -90,7 +90,7 @@ export default {
 
   // https://bootstrap-vue.org/docs#tree-shaking-with-nuxtjs
   bootstrapVue: {
-    components: ['BContainer', 'BCollapse', 'BRow', 'BCol', 'BButton']
+    components: ['BContainer', 'BCollapse', 'BRow', 'BCol', 'BButton', 'BFormCheckbox']
   },
 
   // https://google-analytics.nuxtjs.org/
@@ -103,7 +103,7 @@ export default {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faHome', 'faUser', 'faScroll', 'faEnvelope', 'faEye', 'faPrint', 'faFileDownload']
+        icons: ['faHome', 'faUser', 'faScroll', 'faEnvelope', 'faEye', 'faPrint', 'faFileDownload', 'faMoon', 'faSun']
       }
     ]
   },

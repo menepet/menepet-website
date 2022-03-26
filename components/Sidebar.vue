@@ -76,6 +76,17 @@
               </ul>
             </nav>
             <footer class="nav-footer">
+              <b-form-checkbox
+                v-model="isDarkTheme"
+                name="switch theme"
+                aria-label="switch between light or dark theme"
+                switch
+                size="sm"
+                @change="onSwitch"
+              >
+                <font-awesome-icon v-if="isDarkTheme" icon="moon" />
+                <font-awesome-icon v-else icon="sun" />
+              </b-form-checkbox>
               <div class="copy">
                 <p>&copy; Petousis Menelaos<br>All Right Reserved.</p>
               </div>
@@ -88,8 +99,18 @@
 </template>
 
 <script>
+import { isDarkTheme, setDarkTheme } from '@/utils'
+
 export default {
   name: 'Sidebar',
+  data() {
+    return {
+      isDarkTheme: false
+    }
+  },
+  mounted() {
+    this.isDarkTheme = isDarkTheme()
+  },
   methods: {
     toggleMenu() {
       const navEl = document.getElementById('header-content')
@@ -107,10 +128,27 @@ export default {
       } else {
         el.classList.add(className)
       }
+    },
+    onSwitch() {
+      setDarkTheme(this.isDarkTheme)
     }
   }
 }
 </script>
+
+<style lang="scss">
+.custom-control-label::before {
+  background-color: $main-color;
+}
+.custom-control-input:checked ~
+.custom-control-label::before {
+  border-color: $main-color;
+  background-color: $main-color;
+}
+.custom-switch .custom-control-label::after {
+  background-color: white;
+}
+</style>
 
 <style lang="scss" scoped>
 @import '~/assets/styles/nav-icon.scss';
