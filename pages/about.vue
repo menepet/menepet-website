@@ -142,7 +142,7 @@ ul li {
     line-height: 1em;
     margin-bottom: 13px;
     a {
-      color: $main-color;
+      color: var(--color-primary);
     }
 }
 
@@ -164,7 +164,7 @@ section {
           height: 100%;
       }
       .progress {
-          background-color: $main-color;
+          background-color: var(--color-primary);
           -webkit-animation: progressBar 3s ease-in-out;
           animation: progressBar 3s ease-in-out;
           -moz-animation: progressBar 3s ease-in-out;

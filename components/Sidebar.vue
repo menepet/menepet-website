@@ -110,12 +110,12 @@ export default {
 
 <style lang="scss">
 .custom-control-label::before {
-  background-color: $main-color;
+  background-color: var(--color-primary);
 }
 .custom-control-input:checked ~
 .custom-control-label::before {
-  border-color: $main-color;
-  background-color: $main-color;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 .custom-switch .custom-control-label::after {
   background-color: white;
@@ -124,7 +124,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/styles/nav-icon.scss';
-$bg: #2a2b30;
 
 #header-content {
   font-family: 'Droid Sans'
@@ -135,7 +134,7 @@ $bg: #2a2b30;
   left: 0;
   height: 100%;
   width: $sidebarWidth;
-  background-color: $bg;
+  background-color: var(--sidebar);
   overflow: auto;
   overflow-x: hidden;
   text-align: center;
@@ -152,7 +151,7 @@ $bg: #2a2b30;
     padding: 10px 0;
     white-space: nowrap;
     z-index: 1;
-    background-color: $main-color;
+    background-color: var(--color-primary);
     margin: 0;
   }
   nav.nav-menu ul li {
@@ -211,7 +210,7 @@ header .header-mobile {
   left: 0;
   height: $header-mobile-height;
   width: 100%;
-  background-color: $bg-color;
+  background-color: var(--background);
   box-shadow: 0 1px 5px 0px #cccccc;
   z-index: 1;
   display: none;

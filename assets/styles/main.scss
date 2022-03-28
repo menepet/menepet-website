@@ -1,13 +1,19 @@
 :root {
   --color-primary: #668fab;
   --color-secondary: #585858;
-  --bg: $bg-color;
+  --title: #668fab;
+  --background: #f4f4f4;
+  --pre-element: #212529;
+  --sidebar: #202226;
 }
 
 .dark-mode {
-  --color-primary: red;
-  --color-secondary: green;
-  --bg: yellow;
+  --color-primary: #5e80ac;
+  --color-secondary: #b8b8b8;
+  --title: #b8b8b8;
+  --background: #24292d;
+  --pre-element: #f4f4f4;
+  --sidebar: #1f2428;
 }
 
 h3 {
@@ -38,7 +44,7 @@ ul {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  border-bottom: 2px solid $main-color;
+  border-bottom: 2px solid var(--color-primary);
   position: relative;
   display: inline-block;
   margin-right: 15px;
@@ -53,14 +59,14 @@ ul {
 }
 
 .btn-outline-info:not(:disabled):not(.disabled) {
-  color: $main-color;
-  border-color: $main-color;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
   &:hover,
   &:active {
     color: #fff;
-    background-color: $main-color;
-    border-color: $main-color;
-    box-shadow: 0 0 0 0.2rem $main-color;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem var(--color-primary);
   }
 }
 
@@ -73,15 +79,15 @@ body::-webkit-scrollbar {
 }
 body {
   scrollbar-width: thin;
-  scrollbar-color: $main-color $bg-color;
+  scrollbar-color: var(--color-primary) var(--background);
 }
 body::-webkit-scrollbar-track {
-  background: $bg-color;
+  background: var(--background);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: $main-color;
+  background-color: var(--color-primary);
   border-radius: 6px;
-  border: 3px solid $bg-color;
+  border: 3px solid var(--background);
 }
 
 /* Global Page Transition anim */

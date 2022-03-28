@@ -22,14 +22,14 @@ export default {
 <style lang="scss" scoped>
 .page-heading {
     margin: 40px 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dashed var(--title);
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     height: 100%;
 
     h1 {
-        color: $main-color;
+        color: var(--title);
         font-size: 36px;
         font-weight: 700;
         letter-spacing: 1.5px;
@@ -41,7 +41,7 @@ export default {
         }
     }
     .icon {
-        color: $main-color;
+        color: var(--title);
         font-size: 38px;
         line-height: 1em;
     }
