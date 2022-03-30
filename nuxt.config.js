@@ -69,8 +69,10 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    // https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+    // https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode'
   ],
   /*
   ** Nuxt.js modules
@@ -90,7 +92,7 @@ export default {
 
   // https://bootstrap-vue.org/docs#tree-shaking-with-nuxtjs
   bootstrapVue: {
-    components: ['BContainer', 'BCollapse', 'BRow', 'BCol', 'BButton']
+    components: ['BContainer', 'BCollapse', 'BRow', 'BCol', 'BButton', 'BFormCheckbox']
   },
 
   // https://google-analytics.nuxtjs.org/
@@ -103,7 +105,7 @@ export default {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faHome', 'faUser', 'faScroll', 'faEnvelope', 'faEye', 'faPrint', 'faFileDownload']
+        icons: ['faHome', 'faUser', 'faScroll', 'faEnvelope', 'faEye', 'faPrint', 'faFileDownload', 'faMoon', 'faSun']
       }
     ]
   },
@@ -112,7 +114,10 @@ export default {
    * Sass file import
    */
   styleResources: {
-    scss: ['assets/styles/main.scss']
+    scss: [
+      'assets/styles/variables.scss',
+      'assets/styles/main.scss'
+    ]
   },
 
   pwa: {

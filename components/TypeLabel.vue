@@ -98,8 +98,12 @@ export default {
   color: #C0AD60;
 }
 
+pre {
+  color: var(--pre-element)
+}
+
 .string-highlight {
-  color: $main-color;
+  color: var(--color-primary);
 }
 
 .comment {

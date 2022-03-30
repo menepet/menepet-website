@@ -2,9 +2,7 @@
   <div class="page-heading">
     <h1>{{ param.title }}</h1>
 
-    <span class="icon">
-      <font-awesome-icon :icon="param.icon" />
-    </span>
+    <font-awesome-icon class="icon" :icon="param.icon" />
   </div>
 </template>
 
@@ -21,29 +19,36 @@ export default {
 
 <style lang="scss" scoped>
 .page-heading {
+  margin: 20px 0;
+  border-bottom: 1px dashed var(--title);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    color: var(--title);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.6em;
+    margin: auto 0;
+  }
+
+  .icon {
+    color: var(--title);
+    font-size: 25px;
+    line-height: 1em;
+  }
+
+  @media screen and (min-width: 768px) {
     margin: 40px 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
 
     h1 {
-        color: $main-color;
-        font-size: 36px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        line-height: 1.6em;
-
-        @media screen and (max-width: 768px) {
-          font-size: 26px;
-          margin: 0;
-        }
+      font-size: 36px;
     }
     .icon {
-        color: $main-color;
-        font-size: 38px;
-        line-height: 1em;
+      font-size: 35px;
     }
+  }
 }
 </style>

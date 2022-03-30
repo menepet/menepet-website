@@ -64,7 +64,7 @@ export default {
 h2 {
   padding-left: 55px;
   text-decoration: underline;
-  text-decoration-color: $main-color;
+  text-decoration-color: var(--color-primary);
   font-size: 20px;
 }
 ul.experience {
@@ -98,7 +98,7 @@ ul.experience {
         font-size: 12px;
         text-transform: uppercase;
         font-family: $font-droid-bold;
-        color: $main-color;
+        color: var(--color-primary);
       }
     }
     .year {
@@ -112,7 +112,7 @@ ul.experience {
         -webkit-transform: translateX(-140%);
         -ms-transform: translateX(-140%);
         transform: translateX(-140%);
-        color: $font-color;
+        color: var(--color-secondary);
 
         &.to {
           top: -18px;
@@ -137,7 +137,7 @@ ul.experience {
     .line-left {
       width: 2px;
       height: 100%;
-      background-color: $main-color;
+      background-color: var(--color-primary);
       left: -10px;
       top: 0;
       position: absolute;
@@ -151,7 +151,7 @@ ul.experience {
         position: absolute;
         left: -4px;
         top: -10px;
-        border-color: $main-color;
+        border-color: var(--color-primary);
       }
       &:after {
         content: "";
@@ -163,7 +163,7 @@ ul.experience {
         position: absolute;
         left: -4px;
         top: 100%;
-        border-color: $main-color;
+        border-color: var(--color-primary);
       }
     }
   }

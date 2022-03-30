@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss" scoped>
   .icon svg, .icon a {
-    color: $main-color;
+    color: var(--color-primary);
     font-size: 22px;
     cursor: pointer;
     margin-right: 15px;

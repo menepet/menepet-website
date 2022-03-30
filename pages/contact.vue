@@ -144,7 +144,7 @@ export default {
 
 <style lang="scss" scoped>
 input, textarea {
-  border-color: $main-color;
+  border-color: var(--color-primary);
 }
 .footnote {
   display: none;

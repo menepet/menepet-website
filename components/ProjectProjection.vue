@@ -49,10 +49,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$hashColor: rgba(102, 143, 171, 0.7);
-
 ul {
-  border: $main-color 1px dotted;
+  border: var(--color-primary) 1px dotted;
   border-radius: 15px;
   padding: 25px;
 
@@ -61,12 +59,12 @@ ul {
     font-family: $font-droid-regular;
 
     .dot {
-      color: $main-color;
+      color: var(--color-primary);
       font-size: 20px;
     }
     .tech {
-      border: $hashColor 1px solid;
-      color: $hashColor;
+      border: var(--color-primary) 1px solid;
+      color: var(--color-primary);
       border-radius: 20px;
       padding: 3px 6px;
       margin-right: 7px;
@@ -74,7 +72,7 @@ ul {
       line-height: 1.8;
     }
     a {
-      color: $main-color;
+      color: var(--color-primary);
       word-break: break-word;
     }
   }

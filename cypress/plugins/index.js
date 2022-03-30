@@ -1,3 +1,4 @@
+// eslint-disable-next-line spaced-comment
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -19,4 +20,9 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  on('before:browser:launch', (browser = {}, args) => {
+    args.push('--force-dark-mode=true')
+
+    return args
+  })
 }
