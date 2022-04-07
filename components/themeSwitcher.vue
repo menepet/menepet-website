@@ -8,7 +8,7 @@
     switch
   >
     <font-awesome-icon
-      v-if="this.$colorMode.preference === 'dark'"
+      v-if="$colorMode.preference === 'dark'"
       tabindex="0"
       aria-label="switch to light theme"
       icon="moon"
@@ -21,3 +21,20 @@
     />
   </b-form-checkbox>
 </template>
+
+<script>
+export default {
+  name: 'ThemeSwitcher',
+  mounted() {
+    const hasSelectedTheme = localStorage.getItem('nuxt-color-mode')
+    const hasDarkSystemDefault = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    if (!hasSelectedTheme && hasDarkSystemDefault) {
+      window.requestAnimationFrame(() => {
+        this.$colorMode.preference = 'dark'
+        console.log('dark mode')
+      })
+    }
+  }
+}
+</script>
