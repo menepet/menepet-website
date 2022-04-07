@@ -32,7 +32,6 @@ export default {
     if (!hasSelectedTheme && hasDarkSystemDefault) {
       window.requestAnimationFrame(() => {
         this.$colorMode.preference = 'dark'
-        console.log('dark mode')
       })
     }
   }
