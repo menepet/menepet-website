@@ -58,7 +58,6 @@ describe('Checks light/dark theme functionality', () => {
 
   it('changes from light to dark', () => {
     cy.get('input[type="checkbox"]').click()
-    cy.get('input[type="checkbox"]').click()
   })
 
   it('has light mode', () => {
