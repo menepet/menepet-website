@@ -84,7 +84,7 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
-    '@nuxtjs/google-analytics',
+    '@nuxtjs/gtm',
     '@nuxtjs/sitemap',
     '@nuxtjs/amp',
     'nuxt-fontawesome'
@@ -95,8 +95,9 @@ export default {
     components: ['BContainer', 'BCollapse', 'BRow', 'BCol', 'BButton', 'BFormCheckbox']
   },
 
-  // https://google-analytics.nuxtjs.org/
-  googleAnalytics: {
+  // https://github.com/nuxt-community/gtm-module
+  gtm: {
+    enabled: false,
     id: process.env.GA_ID || ''
   },
 
