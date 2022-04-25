@@ -97,8 +97,10 @@ export default {
 
   // https://github.com/nuxt-community/gtm-module
   gtm: {
-    enabled: false,
-    id: process.env.GA_ID || ''
+    id: process.env.GA_ID || '',
+    pageTracking: true,
+    scriptDefer: true,
+    enabled: process.env.NODE_ENV === 'production'
   },
 
   // https://github.com/vaso2/nuxt-fontawesome
