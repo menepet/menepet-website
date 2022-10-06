@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
 html, body {
   font-family: Arial, sans-serif, -apple-system, BlinkMacSystemFont;
-  background-color: var(--background);
+  background-color: var(--background) !important; // due to linkedIn widget override
   color: var(--color-secondary);
   font-size: 16px;
   word-spacing: 1px;

@@ -7,10 +7,13 @@
         id="contact-form"
         name="contact"
         method="POST"
-        data-netlify="true"
         netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
         netlify
       >
+        <div data-netlify-recaptcha="true" />
+        <input type="hidden" name="form-name" value="contact">
+
         <div class="messages" />
         <div class="controls">
           <div class="row">
@@ -44,16 +47,16 @@
             </div>
             <div class="col-md-6">
               <div
-                class="LI-profile-badge"
-                data-version="v1"
-                data-size="medium"
+                class="badge-base LI-profile-badge"
                 data-locale="en_US"
-                data-type="horizontal"
-                data-theme="light"
+                data-size="medium"
+                data-theme="dark"
+                data-type="HORIZONTAL"
                 data-vanity="menelaospetousis"
+                data-version="v1"
               >
                 <a
-                  class="LI-simple-link"
+                  class="badge-base__link LI-simple-link"
                   href="https://gr.linkedin.com/in/menelaospetousis?trk=profile-badge"
                 >
                   Menelaos Petousis
@@ -85,7 +88,12 @@
           </div> -->
           <b-row>
             <b-col>
-              <b-button type="submit" pill variant="outline-info" class="mt-3 mb-4">
+              <b-button
+                type="submit"
+                pill
+                variant="outline-info"
+                class="mt-3 mb-4"
+              >
                 Send message
               </b-button>
             </b-col>
@@ -103,7 +111,11 @@
         </div>
       </form>
 
-      <a href="https://github.com/menepet/menepet-website" target="_blank" rel="noopener">
+      <a
+        href="https://github.com/menepet/menepet-website"
+        target="_blank"
+        rel="noopener"
+      >
         <img
           loading="lazy"
           width="70"
@@ -131,19 +143,16 @@ export default {
   head() {
     return {
       ...metaHead('Contact 📨', 'Feel free to contact me here!'),
-      script: [
-        { src: 'https://platform.linkedin.com/badges/js/profile.js' }
-      ],
-      link: [
-        { rel: 'preconnect', href: 'https://platform.linkedin.com' }
-      ]
+      script: [{ src: 'https://platform.linkedin.com/badges/js/profile.js' }],
+      link: [{ rel: 'preconnect', href: 'https://platform.linkedin.com' }]
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-input, textarea {
+input,
+textarea {
   border-color: var(--color-primary);
 }
 .footnote {
@@ -159,7 +168,9 @@ input, textarea {
 }
 
 @media screen and (min-width: 767px) {
-  .footnote { display: block; }
+  .footnote {
+    display: block;
+  }
   .LI-profile-badge {
     float: right;
   }
