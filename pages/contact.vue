@@ -9,10 +9,9 @@
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
-        netlify
+        data-netlify="true"
       >
         <div data-netlify-recaptcha="true" />
-        <input type="hidden" name="form-name" value="contact">
 
         <div class="messages" />
         <div class="controls">
@@ -86,18 +85,12 @@
               <div data-netlify-recaptcha="true" />
             </div>
           </div> -->
-          <b-row>
-            <b-col>
-              <b-button
-                type="submit"
-                pill
-                variant="outline-info"
-                class="mt-3 mb-4"
-              >
-                Send message
-              </b-button>
-            </b-col>
-          </b-row>
+          <button
+            type="submit"
+            class="btn mt-3 mb-4 btn-outline-info rounded-pill"
+          >
+            Send message
+          </button>
           <b-row class="mb-4">
             <b-col>
               <p class="text-muted">
