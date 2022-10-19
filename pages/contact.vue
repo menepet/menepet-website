@@ -10,7 +10,7 @@
       data-netlify-recaptcha="true"
       data-netlify="true"
     >
-      <div data-netlify-recaptcha="true" />
+      <input type="hidden" name="form-name" value="contact">
 
       <div class="messages" />
       <div class="controls">
@@ -79,24 +79,19 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col">
-            <div data-netlify-recaptcha="true" />
-          </div>
-        </div> -->
         <button
           type="submit"
           class="btn mt-3 mb-4 btn-outline-info rounded-pill"
         >
           Send message
         </button>
-        <b-row class="mb-4">
-          <b-col>
+        <div class="row mb-4">
+          <div class="col">
             <p class="text-muted">
               <strong>*</strong> All these fields are required.
             </p>
-          </b-col>
-        </b-row>
+          </div>
+        </div>
         <div class="footnote">
           <i>PS: Hope to see you again here :)</i>
         </div>
