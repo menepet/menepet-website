@@ -129,7 +129,10 @@ export default {
     return {
       ...metaHead('Contact 📨', 'Feel free to contact me here!'),
       script: [{ src: 'https://platform.linkedin.com/badges/js/profile.js' }],
-      link: [{ rel: 'preconnect', href: 'https://platform.linkedin.com' }]
+      link: [
+        { hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}/contact` },
+        { rel: 'preconnect', href: 'https://platform.linkedin.com' }
+      ]
     }
   }
 }

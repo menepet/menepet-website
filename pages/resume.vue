@@ -65,7 +65,10 @@ export default {
   },
   head() {
     return {
-      ...metaHead('My Resume 📜', 'Petousis Menelaos CV and professional experience')
+      ...metaHead('My Resume 📜', 'Petousis Menelaos CV and professional experience'),
+      link: [
+        { hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}/resume` }
+      ]
     }
   }
 }

@@ -20,10 +20,6 @@ export default {
       },
       { hid: 'author', name: 'author', content: 'Petousis Menelaos' },
       {
-        hid: 'google-site-verification',
-        name: 'google-site-verification',
-        content: '9sEWsJkZcwBqggjqv64dtaxGbzGJbMXzqov0MLM0F34'
-      }, {
         hid: 'title',
         name: 'title',
         content: 'Petousis Menelaos'
@@ -42,6 +38,7 @@ export default {
       }
     ],
     link: [
+      { hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}` },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://www.google-analytics.com' }
     ]

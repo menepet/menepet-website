@@ -130,7 +130,10 @@ export default {
   },
   head() {
     return {
-      ...metaHead('About Me 🧑‍💻', 'Learn more about my experience as a dev!')
+      ...metaHead('About Me 🧑‍💻', 'Learn more about my experience as a dev!'),
+      link: [
+        { hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}/about` }
+      ]
     }
   }
 }
