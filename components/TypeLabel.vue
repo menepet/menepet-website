@@ -10,7 +10,6 @@
       });
       <span class="comment">// After initialization, click </span><span class="link">here</span>
     </pre>
-    <a v-if="$isAMP" href="/about">about menepet Petousis Menelaos link</a>
   </div>
 </template>
 

@@ -25,7 +25,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "cypress": "^9.2.0",
     "netlify-plugin-cypress": "^2.2.0",
-    "@nuxtjs/amp": "^0.5.4",
     "@nuxtjs/color-mode": "^2.1.1",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/eslint-config": "^12.0.0",

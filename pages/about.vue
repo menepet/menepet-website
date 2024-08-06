@@ -123,7 +123,6 @@ import { metaHead } from "~/utils";
 
 export default {
   name: "AboutPage",
-  amp: false,
   components: { PageHeader },
   data() {
     return {

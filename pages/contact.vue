@@ -9,7 +9,7 @@
       netlify-honeypot="bot-field"
       data-netlify="true"
     >
-      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="form-name" value="contact" />
 
       <div class="messages" />
       <div class="controls">
@@ -25,7 +25,7 @@
                 placeholder="Please enter your name"
                 required="required"
                 data-error="Name is required."
-              >
+              />
               <div class="help-block with-errors" />
             </div>
             <div class="form-group">
@@ -38,7 +38,7 @@
                 placeholder="Please enter your email"
                 required="required"
                 data-error="Valid email is required."
-              >
+              />
               <div class="help-block with-errors" />
             </div>
           </div>
@@ -110,32 +110,35 @@
         class="fork-me"
         alt="Fork me on GitHub"
         data-recalc-dims="1"
-      >
+      />
     </a>
   </div>
 </template>
 
 <script>
-import PageHeader from '~/components/PageHeader'
-import { metaHead } from '~/utils'
+import PageHeader from "~/components/PageHeader";
+import { metaHead } from "~/utils";
 
 export default {
-  name: 'Contact',
-  amp: false,
+  name: "Contact",
   components: {
-    PageHeader
+    PageHeader,
   },
   head() {
     return {
-      ...metaHead('Contact 📨', 'Feel free to contact me here!'),
-      script: [{ src: 'https://platform.linkedin.com/badges/js/profile.js' }],
+      ...metaHead("Contact 📨", "Feel free to contact me here!"),
+      script: [{ src: "https://platform.linkedin.com/badges/js/profile.js" }],
       link: [
-        { hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}/contact` },
-        { rel: 'preconnect', href: 'https://platform.linkedin.com' }
-      ]
-    }
-  }
-}
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: `${process.env.BASE_URL}/contact`,
+        },
+        { rel: "preconnect", href: "https://platform.linkedin.com" },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

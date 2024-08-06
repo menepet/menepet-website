@@ -1,25 +1,31 @@
 <template>
   <div>
-    <img class="icon" src="~/static/icon.svg" width="300" height="187" alt="home logo">
+    <img
+      class="icon"
+      src="~/static/icon.svg"
+      width="300"
+      height="187"
+      alt="home logo"
+    />
     <type-label />
   </div>
 </template>
 
 <script>
-import TypeLabel from '~/components/TypeLabel.vue'
-import { metaHead } from '~/utils'
+import TypeLabel from "~/components/TypeLabel.vue";
+import { metaHead } from "~/utils";
 
 export default {
   components: { TypeLabel },
   head() {
     return {
-      ...metaHead('Home 🏠', 'My Personal Website as a Software Engineer. Check my Resume :)'),
-      link: [
-        { rel: 'amphtml', href: `${process.env.BASE_URL || ''}/amp/` }
-      ]
-    }
-  }
-}
+      ...metaHead(
+        "Home 🏠",
+        "My Personal Website as a Software Engineer. Check my Resume :)"
+      ),
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -40,9 +46,9 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
-    .icon {
-      width: 180px;
-      margin: 10% auto;
-    }
+  .icon {
+    width: 180px;
+    margin: 10% auto;
+  }
 }
 </style>
